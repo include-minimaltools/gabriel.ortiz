@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="generator" content="Astro v1.6.12">
+
+<!-- Primary Meta Tags -->
+<title>Using MDX</title>
+<meta name="title" content="Using MDX">
+<meta name="description" content="Lorem ipsum dolor sit amet">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/blog/using-mdx/">
+<meta property="og:title" content="Using MDX">
+<meta property="og:description" content="Lorem ipsum dolor sit amet">
+<meta property="og:image" content="https://example.com/placeholder-social.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://example.com/blog/using-mdx/">
+<meta property="twitter:title" content="Using MDX">
+<meta property="twitter:description" content="Lorem ipsum dolor sit amet">
+<meta property="twitter:image" content="https://example.com/placeholder-social.jpg">
+
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/using-mdx.e468084e.css" />
+<link rel="stylesheet" href="/assets/about.d6be2960.css" /></head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">        
+        <a href="/" class="logo"><img src="/img/logo-light.png" alt="" class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="/#about">Acerca de</a></li>
+            <li><a class="nav-link scrollto" href="/#projects">Proyectos</a></li>
+            <li><a class="nav-link scrollto" href="/#news">Novedades</a></li>
+            <li><a class="nav-link scrollto" href="/blog">Blogs</a></li>
+            <li><a class="nav-link scrollto" href="/#contact">Contáctame</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+    </header><!-- End Header -->
+
+    <div id="hero" class="hero hero-single route bg-image" style="background-image: url(/placeholder-hero.jpg); max-height: 50%;">
+      <div class="overlay-mf"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <h2 class="hero-title mb-4">Artículo</h2>
+            <ol class="breadcrumb d-flex justify-content-center">
+              <li class="breadcrumb-item">
+                <a href="/">Inicio</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="/blog">Blogs</a>
+              </li>
+              <li class="breadcrumb-item active">Using MDX</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ======= Blog Single Section ======= -->
+      <section class="blog-wrapper sect-pt4" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="post-box">
+                <div class="post-thumb">
+                  <img src="/placeholder-hero.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="post-meta">
+                  <h1 class="article-title">
+                    Using MDX
+                  </h1>
+                  <ul>
+                    <li>
+                      <span class="bi bi-person"></span>
+                      <a href="#">Gabriel Ortiz</a>
+                    </li>
+                    <li>
+                          <span class="bi bi-calendar"></span>
+                          <a>Jul 02 2022</a>
+                        </li>
+                    
+                    
+                  </ul>
+                </div>
+                <div class="article-content">
+                  <p>This theme comes with the <a href="https://docs.astro.build/en/guides/integrations-guide/mdx/">@astrojs/mdx</a> integration installed and configured in your <code>astro.config.mjs</code> config file. If you prefer not to use MDX, you can disable support by removing the integration from your config file.</p>
+<h2 id="why-mdx">Why MDX?</h2>
+<p>MDX is a special flavor of Markdown that supports embedded JavaScript &amp; JSX syntax. This unlocks the ability to <a href="https://docs.astro.build/en/guides/markdown-content/#mdx-features">mix JavaScript and UI Components into your Markdown content</a> for things like interactive charts or alerts.</p>
+<p>If you have existing content authored in MDX, this integration will hopefully make migrating to Astro a breeze.</p>
+<h2 id="example">Example</h2>
+<p>Here is how you import and use a UI component inside of MDX.<br/>
+When you open this page in the browser, you should see the clickable button below.</p>
+
+<a href="#" class="astro-FPRMATIO" onclick="alert('clicked!')">
+	<p>Embedded component in MDX</p>
+</a>
+
+<h2 id="more-links">More Links</h2>
+<ul>
+<li><a href="https://mdxjs.com/docs/what-is-mdx">MDX Syntax Documentation</a></li>
+<li><a href="https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages">Astro Usage Documentation</a></li>
+<li><strong>Note:</strong> <a href="https://docs.astro.build/en/reference/directives-reference/#client-directives">Client Directives</a> are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default.</li>
+</ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              
+              <div class="widget-sidebar sidebar-search">
+                <h5 class="sidebar-title">Search</h5>
+                <div class="sidebar-content">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary btn-search" type="button">
+                          <span class="bi bi-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="widget-sidebar">
+                <h5 class="sidebar-title">Recent Post</h5>
+                <div class="sidebar-content">
+                  <ul class="list-sidebar">
+                    <li>
+                      <a href="#">Atque placeat maiores.</a>
+                    </li>
+                    <li>
+                      <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                    </li>
+                    <li>
+                      <a href="#">Nam quo autem exercitationem.</a>
+                    </li>
+                    <li>
+                      <a href="#">Atque placeat maiores nam quo autem</a>
+                    </li>
+                    <li>
+                      <a href="#">Nam quo autem exercitationem.</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="widget-sidebar">
+                <h5 class="sidebar-title">Archives</h5>
+                <div class="sidebar-content">
+                  <ul class="list-sidebar">
+                    <li>
+                      <a href="#">September, 2017.</a>
+                    </li>
+                    <li>
+                      <a href="#">April, 2017.</a>
+                    </li>
+                    <li>
+                      <a href="#">Nam quo autem exercitationem.</a>
+                    </li>
+                    <li>
+                      <a href="#">Atque placeat maiores nam quo autem</a>
+                    </li>
+                    <li>
+                      <a href="#">Nam quo autem exercitationem.</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Blog Single Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <figure>
+          <img src="/img/logo-light.png" alt="Logo">
+        </figure>
+        <p>
+          Copyright &copy; 2022
+          <strong>Minimal Tools</strong>
+          <i class="ion-code"></i>
+        </p>
+        <p>Créditos: BootstrapMade <i class="ion-heart"></i></p>
+      </div>
+    </footer>
+    <div id="preloader"></div>
+    <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center scrollto"><i class="bi bi-arrow-up-short scrollto"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/typed.js/typed.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

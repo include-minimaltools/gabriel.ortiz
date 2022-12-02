@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="author" content="Kodinger" />
-    <meta
-      name="keyword"
-      content="Kodinger, template, html5, css3, bootstrap4"
-    />
-    <meta name="description" content="Portafolio Personal" />
-    <title>Gabriel Ortiz</title>
-    <link rel="stylesheet" href="ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="sweetalert/dist/sweetalert.css" />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"
-    />
-    <link rel="stylesheet" href="css/stisla.css" />
-  </head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="generator" content="Astro v1.6.12">
 
+<!-- Primary Meta Tags -->
+<title>Mi Portafolio Personal</title>
+<meta name="title" content="Mi Portafolio Personal">
+<meta name="description" content="Bienvenido a mi portafolio personal">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:title" content="Mi Portafolio Personal">
+<meta property="og:description" content="Bienvenido a mi portafolio personal">
+<meta property="og:image" content="https://example.com/placeholder-social.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://example.com/">
+<meta property="twitter:title" content="Mi Portafolio Personal">
+<meta property="twitter:description" content="Bienvenido a mi portafolio personal">
+<meta property="twitter:image" content="https://example.com/placeholder-social.jpg">
+  <link rel="stylesheet" href="/assets/about.d6be2960.css" /><script type="module" src="/hoisted.8834ff12.js"></script></head>
   <body>
+    <!-- <Header title={SITE_TITLE} /> -->
     <nav class="navbar navbar-expand-lg main-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo-light.png" alt="Logo" />
+        <a class="navbar-brand smooth-link" href="#hero">
+          <img src="img/logo-light.png" alt="Logo">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
             <i class="ion-navicon"></i>
           </span>
@@ -46,19 +44,20 @@
               <a class="nav-link smooth-link" href="#hero">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smooth-link" href="#features">Acerca de</a>
+              <a class="nav-link smooth-link" href="#about">Acerca de</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smooth-link" href="#project">Novedades</a>
+              <a class="nav-link smooth-link" href="#news">Novedades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smooth-link" href="#blog">Proyectos</a>
+              <a class="nav-link smooth-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="/blog">Blog</a>
             </li>
           </ul>
           <form class="form-inline">
-            <a href="#blog" class="btn smooth-link align-middle btn-primary"
-              >Contáctame</a
-            >
+            <a href="#contact" class="btn smooth-link align-middle btn-primary">Contáctame</a>
           </form>
         </div>
       </div>
@@ -68,23 +67,17 @@
       <div class="text py-5">
         <p class="lead">¡Hola!, me llamo</p>
         <h1><span class="bold">Gabriel Ortiz</span></h1>
-        <p class="lead mt-4">
-          soy Desarrollador y Aficionado de la tecnología
-        </p>
+        <p class="lead mt-4">soy Desarrollador y Aficionado de la tecnología</p>
         <div class="cta">
-          <a href="#project" class="btn btn-primary smooth-link"
-            >Mis Proyectos</a
-          >
+          <a href="#project" class="btn btn-primary smooth-link">Mis Proyectos</a>
           <div class="link">
-            <a href="https://github.com/include-minimaltools?tab=repositories"
-              >Mis Repositorios</a
-            >
+            <a href="https://github.com/include-minimaltools?tab=repositories">Mis Repositorios</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="padding" id="features">
+    <section class="padding" id="about">
       <div class="container">
         <h2 class="section-title">Acerca de mi</h2>
         <p class="section-lead text-muted">
@@ -382,16 +375,12 @@
       </div>
     </section>
 
-    <section
-      class="bg-overlay padding"
-      id="project"
-      data-bg="img/projects.jpeg"
-    >
+    <section class="bg-overlay padding" id="news" data-bg="img/projects.jpeg">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
             <figure class="projects-picture">
-              <img src="img/Law-431.svg" alt="Youzhang" />
+              <img src="img/Law-431.svg" alt="Youzhang">
             </figure>
           </div>
           <div class="col-12 col-md-6">
@@ -408,11 +397,7 @@
                 de un clic.
               </p>
               <div class="projects-cta">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.minimaltools.learndrive"
-                  class="btn btn-primary"
-                  target="_blank"
-                >
+                <a href="https://play.google.com/store/apps/details?id=com.minimaltools.learndrive" class="btn btn-primary" target="_blank">
                   Descarga ya
                 </a>
                 <a href="#blog" class="btn btn-link smooth-link">
@@ -425,336 +410,278 @@
       </div>
     </section>
 
-    <section class="padding bg-grey" id="blog">
+    <section class="padding bg-grey" id="projects">
       <div class="container">
         <h2 class="section-title">Proyectos Personales</h2>
         <p class="section-lead text-muted">
-          Proyectos personales para la solución de diversos problemas presentados en la vida cotidiana y universitaria
+          Proyectos personales para la solución de diversos problemas
+          presentados en la vida cotidiana y universitaria
         </p>
         <div class="section-body">
           <div class="row col-spacing">
             <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/akdmik.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización 15 Noviembre, 2022
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: React, AspNet 6, SQL Server, JWT
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#" data-toggle="read" data-id="1">Akdmik</a>
-                  </h4>
-                  <p class="card-text">
-                    Akdmik es un sistema de registro de calificaciones académicas de primaria y secundaria. Su funcionalidad principal son reportes para boletines de notas y certificados.
-                  </p>
-                  <div class="text-right">
-                    <a href="#" class="card-more">
-                      Previsualización<i class="ion-ios-arrow-right"></i>
-                    </a>
-                  </div>
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/akdmik.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          noviembre de 2022
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: React, Net Core 6, SQL Server, JWT
+        </div>
+    <h4 class="card-title">
+      <a>Akdmik</a>
+    </h4>
+    <p class="card-text">Akdmik es un sistema de registro de calificaciones académicas de primaria y secundaria. Su funcionalidad principal son reportes para boletines de notas y certificados.</p>
+    <div class="text-right">
+      
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/learn-drive-manager.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          julio de 2022
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: NextJS, Firebase
+        </div>
+    <h4 class="card-title">
+      <a>Learn Drive Manager</a>
+    </h4>
+    <p class="card-text">Aplicación Administrativa para la gestión de cuestionarios de la aplicación Ley 431 de Nicaragua. Permite crear nuevos cuestionarios y actualización de la ley.</p>
+    <div class="text-right">
+      
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/kotlin.png" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          mayo de 2022
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Kotlin
+        </div>
+    <h4 class="card-title">
+      <a>Minimal Games App</a>
+    </h4>
+    <p class="card-text">Aplicación de noticias de lanzamiento y novedades de videojuegos, así como de biblioteca de empresas desarrolladoras de videojuegos</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/minimal-games-app" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/inquiry-log.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          diciembre de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Net Core 5, React, Ant Design
+        </div>
+    <h4 class="card-title">
+      <a>Sistema de Gestión de Consultas</a>
+    </h4>
+    <p class="card-text">Sistema para la administración de consultas de carácter monográfico hacia profesores de la UNI.</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/inquiry-log" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/eva-lightning.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          noviembre de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Net Core 5, React, Ant Design
+        </div>
+    <h4 class="card-title">
+      <a>EVA Lightning</a>
+    </h4>
+    <p class="card-text">Proyecto inspirado en el Entorno Virtual Académico (EVA) con la finalidad de cambiar el aspecto visual y rapidez en tiempo de respuesta de la aplicación.</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/eva-lightning-client" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/aed-hub.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          septiembre de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Windows Forms, C#, DevExpress
+        </div>
+    <h4 class="card-title">
+      <a>AED Hub</a>
+    </h4>
+    <p class="card-text">Recopilación completa de todas las actividades de algoritmización y estructuras de datos</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/AED-Hub" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/turbo-c-studio.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          agosto de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Windows Forms, C#, DevExpress
+        </div>
+    <h4 class="card-title">
+      <a>Turbo C Studio</a>
+    </h4>
+    <p class="card-text">Un asistente creado para facilitar el uso de Turbo C 2.0. Posee una interfaz mucho más amigable y la posibilidad de crear formularios como VS 2019</p>
+    <div class="text-right">
+      <a href="https://codeland-uni.herokuapp.com/tools" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/credimas.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          agosto de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: PHP, MySQL
+        </div>
+    <h4 class="card-title">
+      <a>Credi-Más</a>
+    </h4>
+    <p class="card-text">Aplicación para solicitudes de préstamos. Teniendo múltiples formas de pago y pasos de verificación de usuario.</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/credimas" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/3-lados-1-triangulo.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          agosto de 2020
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Windows Forms, C#
+        </div>
+    <h4 class="card-title">
+      <a>3 Lados 1 Triángulo</a>
+    </h4>
+    <p class="card-text">Aplicación para calcular las rectas notables de un triángulo dado, así como la información esencial acerca de su naturaleza</p>
+    <div class="text-right">
+      <a href="https://github.com/include-minimaltools/3lados1triangulo" class="card-more">
+            Ir a repositorio
+            <i class="ion-ios-arrow-right"></i>
+          </a>
+    </div>
+  </div>
+</article>
                 </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/learn-drive-manager.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-									<div class="card-subtitle mb-2 text-muted">
-										Última Actualización Julio 4, 2022
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: NextJS, Firebase
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">Learn Drive Manager</a>
-                  </h4>
-                  <p class="card-text">
-                    Aplicación Administrativa para la gestión de cuestionarios de la aplicación Ley 431 de Nicaragua. Permite crear nuevos cuestionarios con sus preguntas y actualización del contenido legislativo.
-                  </p>
-                  <div class="text-right">
-                    <a href="#" class="card-more">
-                      Read More <i class="ion-ios-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/kotlin.png"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-									<div class="card-subtitle mb-2 text-muted">
-										Última Actualización Mayo 11, 2022
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: Kotlin
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">Minimal Games App</a>
-                  </h4>
-                  <p class="card-text">
-                    Aplicación de noticias de lanzamiento y novedades de videojuegos, así como de biblioteca de empresas desarrolladoras de videojuegos
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/minimal-games-app" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-           
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/inquiry-log.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Diciembre 3, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: Net Core 5, React, AntDesign
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">Sistema de Gestión de Consultas</a>
-                  </h4>
-                  <p class="card-text">
-										Sistema para la administración de consultas de carácter monográfico hacia profesores de la UNI.
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/inquiry-log" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/eva-lightning.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Noviembre 22, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: Net Core 5, React, AntDesign
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">EVA Lightning</a>
-                  </h4>
-                  <p class="card-text">
-										Proyecto inspirado en el Entorno Virtual Académico (EVA) con la finalidad de cambiar el aspecto visual y rapidez en tiempo de respuesta de la aplicación
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/eva-lightning-client" class="card-more">
-											Ir a repositorios<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/aed-hub.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Septiembre 20, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: WinForms C#, DevExpress
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">AED Hub</a>
-                  </h4>
-                  <p class="card-text">
-										Recopilación completa de todas las actividades de algoritmización y estructuras de datos
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/AED-Hub" class="card-more">
-											Ir a repositorios<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/turbo-c-studio.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Agosto 12, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: WinForms C#, DevExpress
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">Turbo C Studio</a>
-                  </h4>
-                  <p class="card-text">
-										Un asistente creado para facilitar el uso de Turbo C 2.0 (Lenguaje utilizado en la carrera :/). Posee una interfaz mucho más amigable y la posibilidad de crear formularios como Windows Forms
-                  </p>
-                  <div class="text-right">
-                    <a href="https://codeland-uni.herokuapp.com/tools" class="card-more">
-											Ver más<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/credimas.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Agosto 4, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: PHP, MySQL
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">CrediMas</a>
-                  </h4>
-                  <p class="card-text">
-										Aplicación para solicitudes de préstamos. Teniendo múltiples formas de pago y pasos de verificación de usuario.
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/credimas" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/3-lados-1-triangulo.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Agosto 4, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: WinForms
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">3 Lados 1 Triángulo</a>
-                  </h4>
-                  <p class="card-text">
-										Aplicación para calcular las rectas notables de un triángulo dado, así como la información esencial acerca de su naturaleza
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/3lados1triangulo" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
           </div>
         </div>
         <h2 class="section-title">Proyectos Experimentales</h2>
         <p class="section-lead text-muted">
-          Proyectos que no tienen un uso real, fueron creados para el desarrollo de la lógica de programación como parte de la carrera Ingeniería en Computación
+          Proyectos que no tienen un uso real, fueron creados para el desarrollo
+          de la lógica de programación como parte de la carrera Ingeniería en
+          Computación
         </p>
         <div class="section-body">
           <div class="row col-spacing">
-             <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <img
-                  class="card-img-top"
-                  src="img/apps/gto.jpg"
-                  alt="Article Image"
-                />
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Mayo 11, 2022
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: Kotlin, Firebase
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#" data-toggle="read" data-id="1">Game Travel Offline</a>
-                  </h4>
-                  <p class="card-text">
-										Aplicación experimental con el fin de conocer las posibilidades que puede otorgar los gráficos primitivos en Android Studio con Kotlin
-                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/Graphics" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
+						<div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/gto.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          mayo de 2022
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Kotlin, Firebase
+        </div>
+    <h4 class="card-title">
+      <a>Game Travel Offline</a>
+    </h4>
+    <p class="card-text">Aplicación experimental con el fin de conocer las posibilidades que puede otorgar los gráficos primitivos en Android Studio con Kotlin</p>
+    <div class="text-right">
+      
+    </div>
+  </div>
+</article>
+                </div><div class="col-12 col-md-6 col-lg-4">
+                  <article class="card">
+  <img class="card-img-top" src="img/apps/windows-c.jpg" alt="Project Image">
+  <div class="card-body">
+    <div class="card-subtitle mb-2 text-muted">
+          Ultima modificación: 
+          agosto de 2021
+        </div>
+    <div class="card-subtitle mb-2 text-muted">
+          Tecnologías: Turbo C 2.0
+        </div>
+    <h4 class="card-title">
+      <a>Windows C</a>
+    </h4>
+    <p class="card-text">Simulación de Windows en lenguaje primitivo de C con compilador TCC (1982) con funcionalidades de multitareas y ejecución de programas en paralelo</p>
+    <div class="text-right">
+      
+    </div>
+  </div>
+</article>
                 </div>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="card">
-                <iframe class="card-video-top" src="https://www.youtube.com/embed/gW74Nauc1zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">
-										Última Actualización Agosto 4, 2021
-									</div>
-                  <div class="card-subtitle mb-2 text-muted">
-                    Tecnologías: Turbo C 2.0
-                  </div>
-                  <h4 class="card-title">
-                    <a href="#">Windows C</a>
-                  </h4>
-                  <p class="card-text">
-                    Simulación de Windows en lenguaje primitivo de C con compilador TCC (1982) con funcionalidades de multitareas y ejecución de programas en paralelo                  </p>
-                  <div class="text-right">
-                    <a href="https://github.com/include-minimaltools/3lados1triangulo" class="card-more">
-											Ir a repositorio<i class="ion-ios-arrow-right"></i>
-										</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            
           </div>
         </div>
+      </div>
     </section>
 
     <section class="padding bg-grey" id="contact">
       <div class="container">
         <h2 class="section-title text-center">Comunícate conmigo</h2>
         <p class="section-lead text-center text-muted">
-          Envíame un mensaje, responderé tan pronto como sea posible.
+					Para contactarte conmigo puedes enviarme un mensaje desde aquí directamente o bien, las siguientes redes sociales.
         </p>
         <div class="section-body">
           <div class="row col-spacing">
@@ -762,21 +689,15 @@
               <ul class="contact-icon">
                 <li>
                   <i class="ion ion-social-github"></i>
-                  <a href="https://github.com/include-minimaltools"
-                    >/include-minimaltools</a
-                  >
+                  <a href="https://github.com/include-minimaltools">/include-minimaltools</a>
                 </li>
                 <li>
                   <i class="ion ion-ios-telephone"></i>
-                  <a href="https://web.whatsapp.com/send?phone=+50557689250"
-                    >+505 5768 9250</a
-                  >
+                  <a href="https://web.whatsapp.com/send?phone=+50557689250">+505 5768 9250</a>
                 </li>
                 <li>
                   <i class="ion ion-ios-email"></i>
-                  <a href="mailto:gabrielortizamador@gmail.com"
-                    >gabrielortizamador@gmail.com</a
-                  >
+                  <a href="mailto:gabrielortizamador@gmail.com">gabrielortizamador@gmail.com</a>
                 </li>
                 <li>
                   <i class="ion ion-social-instagram"></i>
@@ -788,9 +709,7 @@
                 </li>
                 <li>
                   <i class="ion ion-social-youtube"></i>
-                  <a href="https://www.youtube.com/@minimal-tools"
-                    >Minimal Tools</a
-                  >
+                  <a href="https://www.youtube.com/@minimal-tools">Minimal Tools</a>
                 </li>
               </ul>
               <iframe src="" style="border: none" class="maps"></iframe>
@@ -798,39 +717,16 @@
             <div class="col-12 col-md-7">
               <form class="contact row" id="contact-form">
                 <div class="form-group col-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Nombre"
-                    name="name"
-                    required=""
-                  />
+                  <input type="text" class="form-control" placeholder="Nombre" name="name" required="">
                 </div>
                 <div class="form-group col-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    name="email"
-                    required=""
-                  />
+                  <input type="email" class="form-control" placeholder="Email" name="email" required="">
                 </div>
                 <div class="form-group col-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Asunto"
-                    name="subject"
-                    required=""
-                  />
+                  <input type="text" class="form-control" placeholder="Asunto" name="subject" required="">
                 </div>
                 <div class="form-group col-12">
-                  <textarea
-                    class="form-control"
-                    placeholder="Mensaje"
-                    name="message"
-                    required=""
-                  ></textarea>
+                  <textarea class="form-control" placeholder="Mensaje" name="message" required=""></textarea>
                 </div>
                 <div class="form-group col-12 mt-2">
                   <button class="btn btn-primary">Enviar Mensaje</button>
@@ -841,21 +737,20 @@
         </div>
       </div>
     </section>
-
     <footer>
-      <div class="container">
-        <figure>
-          <img src="img/logo-light.png" alt="Logo" />
-        </figure>
-        <p>Copyright &copy; 2022 Minimal Tools <i class="ion-code"></i></p>
-        <p>Créditos: Kodinger <i class="ion-heart"></i></p>
-      </div>
-    </footer>
+  <div class="container">
+    <figure>
+      <img src="img/logo-light.png" alt="Logo">
+    </figure>
+    <p>Copyright &copy; 2022 Minimal Tools <i class="ion-code"></i></p>
+    <p>Créditos: Kodinger <i class="ion-heart"></i></p>
+  </div>
+</footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.easeScroll.js"></script>
-    <script src="sweetalert/dist/sweetalert.min.js"></script>
-    <script src="js/stisla.js"></script>
-  </body>
-</html>
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/jquery.easeScroll.js"></script>
+
+<script src="/js/stisla.js"></script>
+  </body></html>
