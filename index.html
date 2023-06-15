@@ -1,756 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="generator" content="Astro v1.6.12">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.4.1">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://example.com/">
 
 <!-- Primary Meta Tags -->
-<title>Mi Portafolio Personal</title>
-<meta name="title" content="Mi Portafolio Personal">
-<meta name="description" content="Bienvenido a mi portafolio personal">
+<title>Gabriel Ortiz</title>
+<meta name="title" content="Gabriel Ortiz">
+<meta name="description" content="Un poco de mi trayecto como desarrollador">
+<meta content="" name="keywords">
+<meta content="" name="description">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example.com/">
-<meta property="og:title" content="Mi Portafolio Personal">
-<meta property="og:description" content="Bienvenido a mi portafolio personal">
-<meta property="og:image" content="https://example.com/placeholder-social.jpg">
+<meta property="og:title" content="Gabriel Ortiz">
+<meta property="og:description" content="Un poco de mi trayecto como desarrollador">
+<meta property="og:image" content="https://example.com/gaoa-bg.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://example.com/">
-<meta property="twitter:title" content="Mi Portafolio Personal">
-<meta property="twitter:description" content="Bienvenido a mi portafolio personal">
-<meta property="twitter:image" content="https://example.com/placeholder-social.jpg">
-  <link rel="stylesheet" href="/assets/about.d6be2960.css" /><script type="module" src="/hoisted.8834ff12.js"></script></head>
+<meta property="twitter:title" content="Gabriel Ortiz">
+<meta property="twitter:description" content="Un poco de mi trayecto como desarrollador">
+<meta property="twitter:image" content="https://example.com/gaoa-bg.jpg">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="/_astro/_...slug_.664a10e4.css" /></head>
   <body>
-    <!-- <Header title={SITE_TITLE} /> -->
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand smooth-link" href="#hero">
-          <img src="img/logo-light.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <i class="ion-navicon"></i>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mr-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link smooth-link" href="#hero">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-link" href="#about">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-link" href="#news">Novedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-link" href="#projects">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-link" href="/blog">Blog</a>
-            </li>
-          </ul>
-          <form class="form-inline">
-            <a href="#contact" class="btn smooth-link align-middle btn-primary">Contáctame</a>
-          </form>
-        </div>
+    <nav id="main-nav" class="">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
       </div>
-    </nav>
 
-    <section class="hero bg-overlay" id="hero" data-bg="img/profile.jpg">
-      <div class="text py-5">
-        <p class="lead">¡Hola!, me llamo</p>
-        <h1><span class="bold">Gabriel Ortiz</span></h1>
-        <p class="lead mt-4">soy Desarrollador y Aficionado de la tecnología</p>
-        <div class="cta">
-          <a href="#project" class="btn btn-primary smooth-link">Mis Proyectos</a>
-          <div class="link">
-            <a href="https://github.com/include-minimaltools?tab=repositories">Mis Repositorios</a>
-          </div>
-        </div>
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
       </div>
-    </section>
 
-    <section class="padding" id="about">
-      <div class="container">
-        <h2 class="section-title">Acerca de mi</h2>
-        <p class="section-lead text-muted">
-          Soy Gabriel Ortiz, actualmente curso la carrera de Ingeniería en
-          Computación de la Universidad Nacional de Ingeniería, he participado
-          en diversas competencias de desarrollo de soluciones mediante
-          aplicaciones web o móvil a nivel nacional y universitaria. Me gusta
-          indagar de forma autodidacta acerca de las nuevas tecnologías que se
-          presentan en el universo de la programación.
-        </p>
-        <h2 class="mt-xl-5">Tecnologías:</h2>
-        <div class="row mt-4">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-dot-net"></span>
-              </div>
-              <div class="desc">
-                <h2>Net Core</h2>
-                <p>
-                  Implementación de API con .NET Core e integración con SQL
-                  Server con Entity Framework Core
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-3">
-                <span class="mdi mdi-react"></span>
-              </div>
-              <div class="desc">
-                <h2>React</h2>
-                <p>
-                  Desarrollo de aplicaciones web desde el framework de React y
-                  Next con las librerías de Redux, AntDesign
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-nodejs"></span>
-              </div>
-              <div class="desc">
-                <h2>Node</h2>
-                <p>
-                  Creación de API con NodeJS y Typescript, utilizando
-                  autenticación con Json Web Token
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon">
-                <i class="ion-paintbrush"></i>
-              </div>
-              <div class="desc">
-                <h2>Frameworks CSS</h2>
-                <p>
-                  Manejo de frameworks para diseño de páginas web Bootstrap y
-                  Tailwind CSS
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-graphql"></span>
-              </div>
-              <div class="desc">
-                <h2>Graphql</h2>
-                <p>
-                  Uso de GraphQL con API's Node para las consultas eficientes de
-                  aplicaciones clientes con uso de WebSocket
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-cellphone"></span>
-              </div>
-              <div class="desc">
-                <h2>React Native</h2>
-                <p>
-                  Implementación de Aplicaciones Móviles con framework Expo con
-                  las librerías de React Native Paper y React Re-Animation
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-microsoft-visual-studio-code"></span>
-              </div>
-              <div class="desc">
-                <h2>Windows Forms</h2>
-                <p>
-                  Desarrollo de aplicaciones de escritorio nativas windows con
-                  Windows Forms y suite DevExpress
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-firebase"></span>
-              </div>
-              <div class="desc">
-                <h2>Firebase</h2>
-                <p>
-                  Uso de FireStore y Firebase Authentication para aplicaciones
-                  web, escritorio y móviles
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-language-php"></span>
-              </div>
-              <div class="desc">
-                <h2>PHP</h2>
-                <p>Aplicaciones web con patrón MVC, framework Code Igniter</p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-xl-5">Lenguajes:</h2>
-        <div class="row mt-4">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-csharp"></span>
-              </div>
-              <div class="desc">
-                <h2>C#</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-database"></span>
-              </div>
-              <div class="desc">
-                <h2>Sql</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-typescript"></span>
-              </div>
-              <div class="desc">
-                <h2>Typescript</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-lg-5">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-html5"></span>
-              </div>
-              <div class="desc">
-                <h2>HTML</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-css3"></span>
-              </div>
-              <div class="desc">
-                <h2>CSS</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-javascript"></span>
-              </div>
-              <div class="desc">
-                <h2>Javascript</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-lg-5">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-python"></span>
-              </div>
-              <div class="desc">
-                <h2>Python</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-c"></span>
-              </div>
-              <div class="desc">
-                <h2>C</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon pt-2">
-                <span class="mdi mdi-language-kotlin"></span>
-              </div>
-              <div class="desc">
-                <h2>Kotlin</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-xl-5">Otras Habilidades:</h2>
-        <div class="row mt-4">
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-linux"></span>
-              </div>
-              <div class="desc">
-                <h2>Linux</h2>
-                <p>
-                  Conocimiento de los comandos básicos de bash del sistema
-                  operativo Linux
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item no-spacing">
-              <div class="icon pt-3">
-                <span class="mdi mdi-jira"></span>
-              </div>
-              <div class="desc">
-                <h2>Gestión de Proyectos</h2>
-                <p>
-                  Familiaridad con plataformas de gestión de proyectos como
-                  Jira, Trello o ClickUp
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12">
-            <div class="list-item">
-              <div class="icon">
-                <i class="ion-social-github"></i>
-              </div>
-              <div class="desc">
-                <h2>Control de Código Fuente</h2>
-                <p>
-                  Trabajo colaborativo con tecnologías de Git y TeamFoundation
-                  con plataformas como GitHub y Azure DevOps
-                </p>
-                <a href="#" class="more">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <ul class="nav-menu list-unstyled">
+        <li>
+          <a href="#header" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="smoothScroll">
+            Acerca
+          </a>
+        </li>
+        <li>
+          <a href="#roadmap-section" class="smoothScroll">
+            RoadMap
+          </a>
+        </li>
+        <li>
+          <a href="#journal" class="smoothScroll">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio" class="smoothScroll">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+  <div id="header" class="home">
+    <div class="container">
+      <div class="header-content">
+        <h1>Soy <span class="typed"></span></h1>
+        <p>Desarrollador de soluciones</p>
 
-    <section class="bg-overlay padding" id="news" data-bg="img/projects.jpeg">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
-            <figure class="projects-picture">
-              <img src="img/Law-431.svg" alt="Youzhang">
-            </figure>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="projects-details">
-              <div class="projects-badge">React Native</div>
-              <div class="projects-badge">Firebase</div>
-              <div class="projects-badge">Android</div>
-              <h2 class="projects-title">Ley 431 de Nicaragua</h2>
-              <p class="projects-description">
-                Ley 431 de Nicaragua es una app que además de mantenerte
-                actualizado sobre los cambios o ajustes que pudieron haberse
-                aplicado a la Ley en determinado momento, te permite entrenarte
-                de manera dinámica e interactiva desde donde estés y al alcance
-                de un clic.
-              </p>
-              <div class="projects-cta">
-                <a href="https://play.google.com/store/apps/details?id=com.minimaltools.learndrive" class="btn btn-primary" target="_blank">
-                  Descarga ya
-                </a>
-                <a href="#blog" class="btn btn-link smooth-link">
-                  Más Proyectos
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul class="list-unstyled list-social">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/gb.rtz.am">
+              <i class="ion-social-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/gbr.aliz/">
+              <i class="ion-social-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section class="padding bg-grey" id="projects">
-      <div class="container">
-        <h2 class="section-title">Proyectos Personales</h2>
-        <p class="section-lead text-muted">
-          Proyectos personales para la solución de diversos problemas
-          presentados en la vida cotidiana y universitaria
-        </p>
-        <div class="section-body">
-          <div class="row col-spacing">
-            <div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/akdmik.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          noviembre de 2022
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: React, Net Core 6, SQL Server, JWT
-        </div>
-    <h4 class="card-title">
-      <a>Akdmik</a>
-    </h4>
-    <p class="card-text">Akdmik es un sistema de registro de calificaciones académicas de primaria y secundaria. Su funcionalidad principal son reportes para boletines de notas y certificados.</p>
-    <div class="text-right">
-      
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/learn-drive-manager.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          julio de 2022
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: NextJS, Firebase
-        </div>
-    <h4 class="card-title">
-      <a>Learn Drive Manager</a>
-    </h4>
-    <p class="card-text">Aplicación Administrativa para la gestión de cuestionarios de la aplicación Ley 431 de Nicaragua. Permite crear nuevos cuestionarios y actualización de la ley.</p>
-    <div class="text-right">
-      
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/kotlin.png" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          mayo de 2022
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Kotlin
-        </div>
-    <h4 class="card-title">
-      <a>Minimal Games App</a>
-    </h4>
-    <p class="card-text">Aplicación de noticias de lanzamiento y novedades de videojuegos, así como de biblioteca de empresas desarrolladoras de videojuegos</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/minimal-games-app" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/inquiry-log.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          diciembre de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Net Core 5, React, Ant Design
-        </div>
-    <h4 class="card-title">
-      <a>Sistema de Gestión de Consultas</a>
-    </h4>
-    <p class="card-text">Sistema para la administración de consultas de carácter monográfico hacia profesores de la UNI.</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/inquiry-log" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/eva-lightning.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          noviembre de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Net Core 5, React, Ant Design
-        </div>
-    <h4 class="card-title">
-      <a>EVA Lightning</a>
-    </h4>
-    <p class="card-text">Proyecto inspirado en el Entorno Virtual Académico (EVA) con la finalidad de cambiar el aspecto visual y rapidez en tiempo de respuesta de la aplicación.</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/eva-lightning-client" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/aed-hub.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          septiembre de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Windows Forms, C#, DevExpress
-        </div>
-    <h4 class="card-title">
-      <a>AED Hub</a>
-    </h4>
-    <p class="card-text">Recopilación completa de todas las actividades de algoritmización y estructuras de datos</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/AED-Hub" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/turbo-c-studio.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          agosto de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Windows Forms, C#, DevExpress
-        </div>
-    <h4 class="card-title">
-      <a>Turbo C Studio</a>
-    </h4>
-    <p class="card-text">Un asistente creado para facilitar el uso de Turbo C 2.0. Posee una interfaz mucho más amigable y la posibilidad de crear formularios como VS 2019</p>
-    <div class="text-right">
-      <a href="https://codeland-uni.herokuapp.com/tools" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/credimas.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          agosto de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: PHP, MySQL
-        </div>
-    <h4 class="card-title">
-      <a>Credi-Más</a>
-    </h4>
-    <p class="card-text">Aplicación para solicitudes de préstamos. Teniendo múltiples formas de pago y pasos de verificación de usuario.</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/credimas" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/3-lados-1-triangulo.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          agosto de 2020
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Windows Forms, C#
-        </div>
-    <h4 class="card-title">
-      <a>3 Lados 1 Triángulo</a>
-    </h4>
-    <p class="card-text">Aplicación para calcular las rectas notables de un triángulo dado, así como la información esencial acerca de su naturaleza</p>
-    <div class="text-right">
-      <a href="https://github.com/include-minimaltools/3lados1triangulo" class="card-more">
-            Ir a repositorio
-            <i class="ion-ios-arrow-right"></i>
-          </a>
-    </div>
-  </div>
-</article>
-                </div>
+  
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/gaoa.jpg" class="img-responsive" alt="me">
+            </div>
           </div>
         </div>
-        <h2 class="section-title">Proyectos Experimentales</h2>
-        <p class="section-lead text-muted">
-          Proyectos que no tienen un uso real, fueron creados para el desarrollo
-          de la lógica de programación como parte de la carrera Ingeniería en
-          Computación
-        </p>
-        <div class="section-body">
-          <div class="row col-spacing">
-						<div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/gto.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          mayo de 2022
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Kotlin, Firebase
-        </div>
-    <h4 class="card-title">
-      <a>Game Travel Offline</a>
-    </h4>
-    <p class="card-text">Aplicación experimental con el fin de conocer las posibilidades que puede otorgar los gráficos primitivos en Android Studio con Kotlin</p>
-    <div class="text-right">
-      
-    </div>
-  </div>
-</article>
-                </div><div class="col-12 col-md-6 col-lg-4">
-                  <article class="card">
-  <img class="card-img-top" src="img/apps/windows-c.jpg" alt="Project Image">
-  <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted">
-          Ultima modificación: 
-          agosto de 2021
-        </div>
-    <div class="card-subtitle mb-2 text-muted">
-          Tecnologías: Turbo C 2.0
-        </div>
-    <h4 class="card-title">
-      <a>Windows C</a>
-    </h4>
-    <p class="card-text">Simulación de Windows en lenguaje primitivo de C con compilador TCC (1982) con funcionalidades de multitareas y ejecución de programas en paralelo</p>
-    <div class="text-right">
-      
-    </div>
-  </div>
-</article>
-                </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="padding bg-grey" id="contact">
-      <div class="container">
-        <h2 class="section-title text-center">Comunícate conmigo</h2>
-        <p class="section-lead text-center text-muted">
-					Para contactarte conmigo puedes enviarme un mensaje desde aquí directamente o bien, las siguientes redes sociales.
-        </p>
-        <div class="section-body">
-          <div class="row col-spacing">
-            <div class="col-12 col-md-5">
-              <ul class="contact-icon">
-                <li>
-                  <i class="ion ion-social-github"></i>
-                  <a href="https://github.com/include-minimaltools">/include-minimaltools</a>
-                </li>
-                <li>
-                  <i class="ion ion-ios-telephone"></i>
-                  <a href="https://web.whatsapp.com/send?phone=+50557689250">+505 5768 9250</a>
-                </li>
-                <li>
-                  <i class="ion ion-ios-email"></i>
-                  <a href="mailto:gabrielortizamador@gmail.com">gabrielortizamador@gmail.com</a>
-                </li>
-                <li>
-                  <i class="ion ion-social-instagram"></i>
-                  <a href="https://www.instagram.com/gbr.aliz">Gabriel Ortiz</a>
-                </li>
-                <li>
-                  <i class="ion ion-social-facebook"></i>
-                  <a href="https://www.facebook.com/gb.rtz.am">Gabriel Ortiz</a>
-                </li>
-                <li>
-                  <i class="ion ion-social-youtube"></i>
-                  <a href="https://www.youtube.com/@minimal-tools">Minimal Tools</a>
-                </li>
-              </ul>
-              <iframe src="" style="border: none" class="maps"></iframe>
-            </div>
-            <div class="col-12 col-md-7">
-              <form class="contact row" id="contact-form">
-                <div class="form-group col-6">
-                  <input type="text" class="form-control" placeholder="Nombre" name="name" required="">
-                </div>
-                <div class="form-group col-6">
-                  <input type="email" class="form-control" placeholder="Email" name="email" required="">
-                </div>
-                <div class="form-group col-12">
-                  <input type="text" class="form-control" placeholder="Asunto" name="subject" required="">
-                </div>
-                <div class="form-group col-12">
-                  <textarea class="form-control" placeholder="Mensaje" name="message" required=""></textarea>
-                </div>
-                <div class="form-group col-12 mt-2">
-                  <button class="btn btn-primary">Enviar Mensaje</button>
-                </div>
-              </form>
-            </div>
+        <div class="col-lg-7">
+          <div class="about-descr">
+            <p class="p-heading">
+              Soy Gabriel Ortiz, estudiante de la carrera de Ingeniería en
+              Computación
+            </p>
+            <p class="separator">
+              He participado en diversas competencias de desarrollo de
+              soluciones mediante aplicaciones web o móvil a nivel nacional y
+              universitaria. Me gusta indagar de forma autodidacta acerca de las
+              nuevas tecnologías que se presentan en el universo de la
+              programación, además de buenas prácticas y arquitecturas limpias
+              para lograr un código ordenado, legible y escalable.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
+    </div>
+  </div>
+  
+
+  
+  <div id="services">
+    <div class="container">
+      <div class="services-carousel owl-theme">
+        <div class="services-block">
+  <i class="mdi mdi-react"></i>
+  <span>React</span>
+  <p class="separator">
+    Desarrollo de aplicaciones web desde el framework de React y Next con las librerías de Redux, AntDesign
+  </p>
+</div><div class="services-block">
+  <i class="mdi mdi-dot-net"></i>
+  <span>NET Core</span>
+  <p class="separator">
+    Implementación de API con .NET Core e integración con SQL Server con Entity Framework Core
+  </p>
+</div><div class="services-block">
+  <i class="mdi mdi-graphql"></i>
+  <span>GraphQL</span>
+  <p class="separator">
+    Uso de GraphQL con API&#39;s Node para las consultas eficientes de aplicaciones clientes con uso de WebSocket
+  </p>
+</div><div class="services-block">
+  <i class="mdi mdi-nodejs"></i>
+  <span>NodeJS</span>
+  <p class="separator">
+    Creación de API con NodeJS y Typescript, utilizando autenticación con Json Web Token
+  </p>
+</div><div class="services-block">
+  <i class="mdi mdi-firebase"></i>
+  <span>Firebase</span>
+  <p class="separator">
+    Uso de FireStore y Firebase Authentication para aplicaciones web, escritorio y móviles
+  </p>
+</div><div class="services-block">
+  <i class="mdi mdi-microsoft"></i>
+  <span>Windows Forms</span>
+  <p class="separator">
+    Aplicaciones nativas de Windows con Windows Forms
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  .link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+  }
+
+  #licensing {
+    fill: green;
+  }
+
+  .link.licensing {
+    stroke: green;
+  }
+
+  .link.resolved {
+    stroke-dasharray: 0, 2 1;
+  }
+
+  circle {
+    fill: #ccc;
+    stroke: #333;
+    stroke-width: 1.5px;
+  }
+
+  text {
+    font: 10px sans-serif;
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  }
+</style>
+
+<div id="roadmap-section" class="paddsection">
   <div class="container">
-    <figure>
-      <img src="img/logo-light.png" alt="Logo">
-    </figure>
-    <p>Copyright &copy; 2022 Minimal Tools <i class="ion-code"></i></p>
-    <p>Créditos: Kodinger <i class="ion-heart"></i></p>
+    <div class="contact-block1">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="contact-contact">
+            <h2 class="mb-30">Roadmap de Proyectos</h2>
+            <ul class="contact-details">
+              Mapa de mis proyectos que he realizado en el trayecto de
+              aprendizaje de programación, desde mis inicios iniciando en la
+              lógica de programación hasta proyectos más complejos con
+              implementaciones reales
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-contact">
+            <h4 class="mb-2">Índice</h4>
+            <ul class="row contact-details" style="gap: 0px 10px">
+              <li>
+                <i class="mdi mdi-circle"></i>
+                Inicio
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:green"></i>
+                Windows Forms
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:orange"></i>
+                Turbo C 2.0
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:#5DC1B9"></i>
+                React + Dotnet API + MS SQL Server
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:red"></i>
+                Angular + Dotnet API + MS SQL Server
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:purple"></i>
+                Kotlin
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:blue"></i>
+                React Native + Firebase
+              </li>
+              <li>
+                <i class="mdi mdi-circle" style="color:gray"></i>
+                Next
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="roadmap" style="display: flex; justify-content: center;">
+        </div>
+      </div>
+    </div>
   </div>
-</footer>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script>
+    const links = [
+      {
+        source: "Inicio",
+        target: "Calculadora",
+        type: "suit",
+        color: "green",
+      },
+      {
+        source: "Calculadora",
+        target: "3 Lados 1 Triangulo",
+        type: "suit",
+        color: "green",
+      },
+      {
+        source: "3 Lados 1 Triangulo",
+        target: "Cajero ATM",
+        type: "suit",
+        color: "orange",
+      },
+      {
+        source: "Cajero ATM",
+        target: "Lotería",
+        type: "suit",
+        color: "orange",
+      },
+      {
+        source: "Lotería",
+        target: "Registro Académico",
+        type: "suit",
+        color: "orange",
+      },
+      {
+        source: "Registro Académico",
+        target: "Windows C",
+        type: "suit",
+        color: "orange",
+      },
+      {
+        source: "Windows C",
+        target: "Turbo C Studio",
+        type: "suit",
+        color: "green",
+      },
+      {
+        source: "Turbo C Studio",
+        target: "Game Travel Online",
+        type: "suit",
+        color: "orange",
+      },
+      {
+        source: "Game Travel Online",
+        target: "AED - Hub",
+        type: "suit",
+        color: "green",
+      },
+      {
+        source: "Turbo C Studio",
+        target: "AED - Hub",
+        type: "suit",
+        color: "green",
+      },
+      {
+        source: "AED - Hub",
+        target: "Sira",
+        type: "suit",
+        color: "#5DC1B9",
+      },
+      {
+        source: "Sira",
+        target: "EVA",
+        type: "suit",
+        color: "#5DC1B9",
+      },
+      {
+        source: "EVA",
+        target: "Inquiry Log System",
+        type: "suit",
+        color: "#5DC1B9",
+      },
+      {
+        source: "Inquiry Log System",
+        target: "Graphics",
+        type: "suit",
+        color: "purple",
+      },
+      {
+        source: "Graphics",
+        target: "MultiIntent App",
+        type: "suit",
+        color: "purple",
+      },
+      {
+        source: "MultiIntent App",
+        target: "Minimal Games App",
+        type: "suit",
+        color: "purple",
+      },
+      {
+        source: "Minimal Games App",
+        target: "Learn Drive App",
+        type: "suit",
+        color: "blue",
+      },
+      {
+        source: "Minimal Games App",
+        target: "Learn Drive Manager",
+        type: "suit",
+        color: "gray",
+      },
+      {
+        source: "Learn Drive App",
+        target: "Akdmik System",
+        type: "suit",
+        color: "#5DC1B9",
+      },
+      {
+        source: "Learn Drive Manager",
+        target: "Akdmik System",
+        type: "suit",
+        color: "#5DC1B9",
+      },
+      {
+        source: "Akdmik System",
+        target: "A Favor App",
+        type: "suit",
+        color: "blue",
+      },
+      {
+        source: "A Favor App",
+        target: "Inwent System",
+        type: "suit",
+        color: "red",
+      },
+    ];
 
-<script src="/js/jquery.min.js"></script>
+    const nodes = {};
 
+    links.forEach(function (link) {
+      link.source =
+        nodes[link.source] || (nodes[link.source] = { name: link.source });
+      link.target =
+        nodes[link.target] ||
+        (nodes[link.target] = { name: link.target, color: link.color });
+    });
 
-<script src="/js/jquery.easeScroll.js"></script>
+    const width = 700,
+      height = 500;
 
-<script src="/js/stisla.js"></script>
+    const force = d3.layout
+      .force()
+      .nodes(d3.values(nodes))
+      .links(links)
+      .size([width, height])
+      .linkDistance(60)
+      .charge(-300)
+      .on("tick", tick)
+      .start();
+
+    const svg = d3
+      .select("#roadmap")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    // Per-type markers, as they don't inherit styles.
+    svg
+      .append("defs")
+      .selectAll("marker")
+      .data(["suit", "licensing", "resolved"])
+      .enter()
+      .append("marker")
+      .attr("id", function (d) {
+        return d;
+      })
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", -1.5)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+    const path = svg
+      .append("g")
+      .selectAll("path")
+      .data(force.links())
+      .enter()
+      .append("path")
+      .attr("class", function (d) {
+        return "link " + d.type;
+      })
+      .attr("marker-end", function (d) {
+        return "url(#" + d.type + ")";
+      });
+
+    const circle = svg
+      .append("g")
+      .selectAll("circle")
+      .data(force.nodes())
+      .enter()
+      .append("circle")
+      .attr("r", 6)
+      .style("fill", (d) => {
+        console.log(d);
+        return d.color;
+      })
+      .call(force.drag);
+
+    const text = svg
+      .append("g")
+      .selectAll("text")
+      .data(force.nodes())
+      .enter()
+      .append("text")
+      .attr("x", 8)
+      .attr("y", ".31em")
+      .text(function (d) {
+        return d.name;
+      });
+
+    // Use elliptical arc path segments to doubly-encode directionality.
+    function tick() {
+      path.attr("d", linkArc);
+      circle.attr("transform", transform);
+      text.attr("transform", transform);
+    }
+
+    function linkArc(d) {
+      const dx = d.target.x - d.source.x,
+        dy = d.target.y - d.source.y,
+        dr = Math.sqrt(dx * dx + dy * dy);
+      return (
+        "M" +
+        d.source.x +
+        "," +
+        d.source.y +
+        "A" +
+        dr +
+        "," +
+        dr +
+        " 0 0,1 " +
+        d.target.x +
+        "," +
+        d.target.y
+      );
+    }
+
+    function transform(d) {
+      return "translate(" + d.x + "," + d.y + ")";
+    }
+  </script>
+</div>
+
+  <div id="journal" class="text-left paddsection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Blogs</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+              <a href="/">
+                <img src="images/blog-post-1.jpg" class="img-responsive" alt="img">
+              </a>
+              <div class="journal-txt">
+                <h4>
+                  <a href="/"> GetString.C</a>
+                </h4>
+                <p class="separator">Librería de Windows C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="text-center paddsection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Últimos Proyectos</h2>
+        <a href="/projects">Ver listado completo</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="portfolio-list">
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">Todos</li>
+              <li class="filter" data-filter=".React">React</li>
+              <li class="filter" data-filter=".Dotnet">Dotnet</li>
+              <li class="filter" data-filter=".Angular">Angular</li>
+              <li class="filter" data-filter=".Microsoft SQL Server">
+                Microsoft SQL Server
+              </li>
+              <li class="filter" data-filter=".React Native">React Native</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ">
+                  <div class="journal-info">
+                    <a href="/projects/turbo-c-studio">
+                      <img src="/images/turbo-c-studio/cover.jpg" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4>
+                        <a href="/projects/turbo-c-studio">Turbo C Studio</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+
+<!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File --><script src="/js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <div id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltoos">Gabriel Ortiz</a>
+		</div>
+	</div>
+</div>
   </body></html>
