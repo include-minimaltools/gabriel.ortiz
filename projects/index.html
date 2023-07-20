@@ -6,31 +6,32 @@
 
 <link rel="icon" type="image/png" href="/images/logo.png">
 
-<meta name="generator" content="Astro v2.6.4">
+<meta name="generator" content="Astro v2.8.5">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://include-minimaltools.github.io/projects/">
 
 <!-- Primary Meta Tags -->
-<title>Proyectos Personales</title>
-<meta name="title" content="Proyectos Personales">
-<meta name="description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta content="" name="keywords">
-<meta content="" name="description">
+<title>Mis proyectos personales</title>
+<meta name="title" content="Mis proyectos personales">
+<meta name="description" content="dfiajdfaofijadsfioj">
+<meta name="keywords" content="">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://include-minimaltools.github.io/projects/">
-<meta property="og:title" content="Proyectos Personales">
-<meta property="og:description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta property="og:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="og:title" content="Mis proyectos personales">
+<meta property="og:description" content="dfiajdfaofijadsfioj">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://include-minimaltools.github.io/projects/">
-<meta property="twitter:title" content="Proyectos Personales">
-<meta property="twitter:description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta property="twitter:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="twitter:title" content="Mis proyectos personales">
+<meta property="twitter:description" content="dfiajdfaofijadsfioj">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
+
+<meta name="view-transition" content="same-origin">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -47,8 +48,10 @@
 <link href="/lib/hover/hover.min.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/logo.png">
+
+
     <link href="/css/blog.css" rel="stylesheet">
-  </head>
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
   <body>
     <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
@@ -91,23 +94,25 @@
     </div>
   </div>
 </nav>
-    <main id="journal-blog" class="text-left paddsections">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Mis proyectos personales</h2>
-        </div>
-      </div>
-      <section class="container">
-        <div class="journal-block">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-				<div class="journal-info mb-30">
+    <main>
+      
+	<div id="journal-blog" class="text-left paddsections">
+		<div class="container">
+		  <div class="section-title text-center">
+			<h2>Mis proyectos personales</h2>
+		  </div>
+		</div>
+		<section class="container">
+		  <div class="journal-block">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
   <a href="/projects/turbo-c-studio">
-    <img src="/images/turbo-c-studio/cover.jpg" class="img-responsive" alt="img">
+    <img src="/images/projects/turbo-c-studio/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-turbo-c-studio">
   </a>
 
   <div class="journal-txt">
-    <h4>
+    <h4 style="view-transition-name: project-title-turbo-c-studio">
       <a href="/projects/turbo-c-studio">Turbo C Studio</a>
     </h4>
     <p class="separator">
@@ -115,10 +120,27 @@
     </p>
   </div>
 </div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/inwent">
+    <img src="/images/projects/inwent/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-inwent">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-inwent">
+      <a href="/projects/inwent">Inwent System</a>
+    </h4>
+    <p class="separator">
+      Sistema de facturación e inventario de productos y servicios para salón de belleza Rebet&#39;s Salon
+    </p>
+  </div>
+</div>
+						</div>		  
 			</div>
-          </div>
-        </div>
-      </section>
+		  </div>
+		</section>
+	</div>	
+
     </main>
     <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/jquery/jquery-migrate.min.js"></script>
@@ -130,7 +152,38 @@
 
 <!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
 
-<!-- Template Main Javascript File --><script src="/js/main.js"></script>
+<!-- Template Main Javascript File --><script>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || toUrl.href.includes('#')) return;
+
+
+  event.intercept({
+    async handler() {
+      const response = await fetch(toUrl.pathname);
+      const text = await response.text();
+
+      // const [, mainHTML] = text.match(/<main>([\s\S]*)<\/main>/i);
+      const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+      const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+      document.startViewTransition(() => {
+        // const main = document.getElementsByTagName('main');
+        const head = document.getElementsByTagName('head');
+        const body = document.getElementsByTagName('body');
+
+        document.documentElement.scrollTop = 0;
+        // main[0].innerHTML = mainHTML;
+        head[0].innerHTML = headHTML;
+        body[0].innerHTML = bodyHTML;
+      })
+    }
+  })
+})
+</script>
+
+<script src="/js/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <footer id="footer" class="text-center">
 	<div class="container">
