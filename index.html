@@ -6,7 +6,7 @@
 
 <link rel="icon" type="image/png" href="/images/logo.png">
 
-<meta name="generator" content="Astro v2.6.4">
+<meta name="generator" content="Astro v2.8.5">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://include-minimaltools.github.io/">
@@ -15,22 +15,23 @@
 <title>Gabriel Ortiz</title>
 <meta name="title" content="Gabriel Ortiz">
 <meta name="description" content="Un poco de mi trayecto como desarrollador">
-<meta content="" name="keywords">
-<meta content="" name="description">
+<meta name="keywords" content="">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://include-minimaltools.github.io/">
 <meta property="og:title" content="Gabriel Ortiz">
 <meta property="og:description" content="Un poco de mi trayecto como desarrollador">
-<meta property="og:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://include-minimaltools.github.io/">
 <meta property="twitter:title" content="Gabriel Ortiz">
 <meta property="twitter:description" content="Un poco de mi trayecto como desarrollador">
-<meta property="twitter:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
+
+<meta name="view-transition" content="same-origin">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -47,7 +48,10 @@
 <link href="/lib/hover/hover.min.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/logo.png">
-  </head>
+
+
+    
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
   <body>
     <nav id="main-nav" class="">
   <div class="row">
@@ -90,7 +94,8 @@
     </div>
   </div>
 </nav>
-    
+    <main>
+      
   <div id="header" class="home">
     <div class="container">
       <div class="header-content">
@@ -489,7 +494,6 @@
       .append("circle")
       .attr("r", 6)
       .style("fill", (d) => {
-        console.log(d);
         return d.color;
       })
       .call(force.drag);
@@ -552,10 +556,10 @@
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
                   <a href="/posts/turbo-c-2">
-                    <img src="/posts/turbo-c-2/hero.png" class="img-responsive" style="object-fit: contain;" alt="img">
+                    <img src="/posts/turbo-c-2/hero.png" class="img-responsive" style="object-fit: contain; view-transition-name: post-hero-turbo-c-2" alt="img">
                   </a>
                   <div class="journal-txt">
-                    <h4>
+                    <h4 style="view-transition-name: post-title-turbo-c-2">
                       <a href="/posts/turbo-c-2">¿Qué es Turbo C 2.0?</a>
                     </h4>
                     <p class="separator">Turbo C es uno de los IDE más importantes de la década de los 80&#39;, con uno de los lenguajes más populares para programar en ese momento: El Lenguaje C</p>
@@ -595,11 +599,22 @@
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all Windows Forms">
                   <div class="journal-info">
                     <a href="/projects/turbo-c-studio">
-                      <img src="/images/turbo-c-studio/cover.jpg" class="img-responsive" alt="img">
+                      <img style="view-transition-name: project-hero-turbo-c-studio" src="/images/projects/turbo-c-studio/hero.png" class="img-responsive" alt="img">
                     </a>
                     <div class="journal-txt">
-                      <h4>
+                      <h4 style="view-transition-name: project-title-turbo-c-studio">
                         <a href="/projects/turbo-c-studio">Turbo C Studio</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div><div class="col-lg-4 col-md-6 portfolio-thumbnail all Angular Dotnet Microsoft SQL Server">
+                  <div class="journal-info">
+                    <a href="/projects/inwent">
+                      <img style="view-transition-name: project-hero-inwent" src="/images/projects/inwent/hero.png" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4 style="view-transition-name: project-title-inwent">
+                        <a href="/projects/inwent">Inwent System</a>
                       </h4>
                     </div>
                   </div>
@@ -610,6 +625,7 @@
     </div>
   </div>
 
+    </main>
     <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/jquery/jquery-migrate.min.js"></script>
 <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -620,7 +636,38 @@
 
 <!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
 
-<!-- Template Main Javascript File --><script src="/js/main.js"></script>
+<!-- Template Main Javascript File --><script>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || toUrl.href.includes('#')) return;
+
+
+  event.intercept({
+    async handler() {
+      const response = await fetch(toUrl.pathname);
+      const text = await response.text();
+
+      // const [, mainHTML] = text.match(/<main>([\s\S]*)<\/main>/i);
+      const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+      const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+      document.startViewTransition(() => {
+        // const main = document.getElementsByTagName('main');
+        const head = document.getElementsByTagName('head');
+        const body = document.getElementsByTagName('body');
+
+        document.documentElement.scrollTop = 0;
+        // main[0].innerHTML = mainHTML;
+        head[0].innerHTML = headHTML;
+        body[0].innerHTML = bodyHTML;
+      })
+    }
+  })
+})
+</script>
+
+<script src="/js/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <footer id="footer" class="text-center">
 	<div class="container">
