@@ -51,7 +51,7 @@
 
 
     <link href="/css/blog.css" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /><link rel="stylesheet" href="/_astro/LiteYouTubeEmbed.4f7e649e.css" /></head>
   <body>
     <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -161,9 +164,8 @@ window.navigation.addEventListener('navigate', (event) => {
 												<li class="date">
 													Fecha:<a href="#">4/7/2022</a>
 												</li>
-												<li class="commont">
-													<i class="ion-ios-heart-outline"></i>
-													<a href="#"> 3 Comments</a>
+												<li class="commont" style="text-transform: lowercase;">
+													<a href="https://github.com/include-minimaltools/learn-drive-manager"><i style="view-transition-name: github-icon-learn-drive-manager" class="mdi mdi-github"></i> github.com/include-minimaltools/learn-drive-manager</a>
 												</li>
 											</ul>
 										</div>
@@ -196,6 +198,8 @@ window.navigation.addEventListener('navigate', (event) => {
 <p><strong>Tabla de listado de multas</strong>: La plataforma permite gestionar y actualizar la información relacionada con las multas de tránsito. Los administradores pueden mantener esta información actualizada y precisa para los usuarios.</p>
 </li>
 </ol>
+<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var d;{let h={0:t=>t,1:t=>JSON.parse(t,a),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,a)),5:t=>new Set(JSON.parse(t,a)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},a=(t,e)=>{if(t===""||!Array.isArray(e))return e;let[r,n]=e;return r in h?h[r](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(d=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=async()=>{var o;if(!this.hydrator||!this.isConnected)return;let e=(o=this.parentElement)==null?void 0:o.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},c=this.querySelectorAll("template[data-astro-template]");for(let s of c){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("data-astro-template")||"default"]=s.innerHTML,s.remove())}for(let s of r){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("name")||"default"]=s.innerHTML)}let l=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),a):{};await this.hydrator(this)(this.Component,l,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((e,r)=>{r.disconnect(),setTimeout(()=>this.childrenConnectedCallback(),0)}).observe(this,{childList:!0})}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let n=this.getAttribute("renderer-url"),[c,{default:l}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),o=this.getAttribute("component-export")||"default";if(!o.includes("."))this.Component=c[o];else{this.Component=c;for(let s of o.split("."))this.Component=this.Component[s]}return this.hydrator=l,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},d.observedAttributes=["props"],d))}})();</script><astro-island uid="ZjDnSn" prefix="r0" component-url="/_astro/Youtube.4047e8fd.js" component-export="default" renderer-url="/_astro/client.2ce19805.js" props="{&quot;id&quot;:[0,&quot;DQrsI5LQKVE&quot;],&quot;title&quot;:[0,&quot;Play:Youtube&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Youtube&quot;,&quot;value&quot;:true}" await-children=""><link rel="preload" href="https://i.ytimg.com/vi/DQrsI5LQKVE/hqdefault.jpg" as="image"/><article class="yt-lite " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/DQrsI5LQKVE/hqdefault.jpg);--aspect-ratio:56.25%"><button type="button" class="lty-playbtn" aria-label="Watch Play:Youtube"></button></article></astro-island>
+<hr/>
 <h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
 <p>El <strong>Administrador de Ley 431</strong> ha sido desarrollado utilizando las siguientes tecnologías:</p>
 <ul>
@@ -207,7 +211,8 @@ window.navigation.addEventListener('navigate', (event) => {
 </li>
 </ul>
 <p>La combinación de Next.js y Firebase en el <strong>Administrador de Ley 431</strong> asegura una plataforma web eficiente, rápida y confiable para los administradores, lo que les permite mantener la aplicación móvil “Ley 431 de Nicaragua” actualizada y funcional, proporcionando a los usuarios un recurso educativo preciso y útil para prepararse para el examen de la ley 431 de tránsito nacional.</p>
-										 
+										
+											<hr>
 											<h2>Imágenes del Proyecto</h2>
 											<div class="portfolio-container">
 												<div class="col portfolio-thumbnail">
@@ -248,21 +253,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>

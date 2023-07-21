@@ -51,7 +51,7 @@
 
 
     <link href="/css/blog.css" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /><link rel="stylesheet" href="/_astro/LiteYouTubeEmbed.4f7e649e.css" /></head>
   <body>
     <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -161,16 +164,15 @@ window.navigation.addEventListener('navigate', (event) => {
 												<li class="date">
 													Fecha:<a href="#">6/7/2022</a>
 												</li>
-												<li class="commont">
-													<i class="ion-ios-heart-outline"></i>
-													<a href="#"> 3 Comments</a>
-												</li>
+												
 											</ul>
 										</div>
 										<p>La aplicación “Ley 431 de Nicaragua” es una herramienta móvil desarrollada utilizando las tecnologías de Firebase y React Native. Su propósito es proporcionar un recurso educativo y de estudio para aquellas personas que necesitan tramitar una licencia de conducir en Nicaragua. La aplicación se enfoca en el contenido relacionado con la ley 431 de tránsito nacional, ofreciendo <strong>desafíos interactivos</strong> y exámenes con preguntas relevantes que deben ser estudiadas para aprobar el proceso de obtención de la licencia.</p>
 <h2 id="qué-es-aplicación-ley-431-de-nicaragua">¿Qué es Aplicación Ley 431 de Nicaragua?</h2>
 <p>La aplicación “Ley 431 de Nicaragua” es una plataforma móvil diseñada para brindar conocimiento y preparación a los aspirantes a obtener una licencia de conducir en el país. Ofrece una amplia variedad de <strong>desafíos interactivos</strong>, cada uno compuesto por preguntas basadas en la ley 431 de tránsito nacional, otorgados por la Policía Nacional de Nicaragua. Cada desafío presenta 4 o 5 posibles respuestas, de las cuales solo una es la correcta. Los usuarios pueden resolver los desafíos, recibir retroalimentación inmediata y avanzar al siguiente en caso de respuesta correcta.</p>
 <p>La aplicación también incluye diversos módulos, cada uno con un máximo de 5 desafíos, y para cada módulo, se encuentra disponible un examen que incluye todas las preguntas del mismo. El tiempo empleado en resolver cada desafío es registrado y utilizado para evaluar el progreso del usuario.</p>
+<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var d;{let h={0:t=>t,1:t=>JSON.parse(t,a),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,a)),5:t=>new Set(JSON.parse(t,a)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},a=(t,e)=>{if(t===""||!Array.isArray(e))return e;let[r,n]=e;return r in h?h[r](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(d=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=async()=>{var o;if(!this.hydrator||!this.isConnected)return;let e=(o=this.parentElement)==null?void 0:o.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},c=this.querySelectorAll("template[data-astro-template]");for(let s of c){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("data-astro-template")||"default"]=s.innerHTML,s.remove())}for(let s of r){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("name")||"default"]=s.innerHTML)}let l=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),a):{};await this.hydrator(this)(this.Component,l,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((e,r)=>{r.disconnect(),setTimeout(()=>this.childrenConnectedCallback(),0)}).observe(this,{childList:!0})}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let n=this.getAttribute("renderer-url"),[c,{default:l}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),o=this.getAttribute("component-export")||"default";if(!o.includes("."))this.Component=c[o];else{this.Component=c;for(let s of o.split("."))this.Component=this.Component[s]}return this.hydrator=l,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},d.observedAttributes=["props"],d))}})();</script><astro-island uid="Z1yvN9u" prefix="r0" component-url="/_astro/Youtube.4047e8fd.js" component-export="default" renderer-url="/_astro/client.2ce19805.js" props="{&quot;id&quot;:[0,&quot;47kDtCRqQ7w&quot;],&quot;title&quot;:[0,&quot;Play:Youtube&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Youtube&quot;,&quot;value&quot;:true}" await-children=""><link rel="preload" href="https://i.ytimg.com/vi/47kDtCRqQ7w/hqdefault.jpg" as="image"/><article class="yt-lite " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/47kDtCRqQ7w/hqdefault.jpg);--aspect-ratio:56.25%"><button type="button" class="lty-playbtn" aria-label="Watch Play:Youtube"></button></article></astro-island>
+<hr/>
 <h2 id="funcionalidades">Funcionalidades</h2>
 <ul>
 <li>
@@ -198,6 +200,8 @@ window.navigation.addEventListener('navigate', (event) => {
 <p><strong>Configuraciones personalizadas</strong>: Los usuarios pueden modificar la visibilidad de su nota, lo que les brinda un mayor control sobre su progreso y logros en la aplicación.</p>
 </li>
 </ul>
+<astro-island uid="Z1BI4Lz" prefix="r1" component-url="/_astro/Youtube.4047e8fd.js" component-export="default" renderer-url="/_astro/client.2ce19805.js" props="{&quot;id&quot;:[0,&quot;YwAsCZT-qIY&quot;],&quot;title&quot;:[0,&quot;Play:Youtube&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Youtube&quot;,&quot;value&quot;:true}" await-children=""><link rel="preload" href="https://i.ytimg.com/vi/YwAsCZT-qIY/hqdefault.jpg" as="image"/><article class="yt-lite " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/YwAsCZT-qIY/hqdefault.jpg);--aspect-ratio:56.25%"><button type="button" class="lty-playbtn" aria-label="Watch Play:Youtube"></button></article></astro-island>
+<hr/>
 <h2 id="tecnologías">Tecnologías</h2>
 <p>La aplicación “Ley 431 de Nicaragua” ha sido desarrollada utilizando las siguientes tecnologías:</p>
 <ul>
@@ -212,6 +216,28 @@ window.navigation.addEventListener('navigate', (event) => {
 <p>La aplicación “Ley 431 de Nicaragua” estuvo disponible en la tienda de aplicaciones <strong>Play Store</strong> para dispositivos Android, alcanzando un registro máximo de 500 descargas. Durante su presencia en la tienda, la aplicación recibió una amplia aceptación por parte de los usuarios que necesitaban prepararse para el examen de la ley 431 de tránsito y obtener su licencia de conducir.</p>
 <p>La disponibilidad en Play Store permitió que un gran número de usuarios accediera a la aplicación y se beneficiara de sus funcionalidades educativas. Los comentarios y valoraciones de los usuarios ayudaron a mejorar la aplicación y ajustarla a las necesidades de los aspirantes a obtener la licencia de conducir.</p>
 <p>Si bien la aplicación ya no está disponible en Play Store, su paso por la tienda y las descargas alcanzadas son un reflejo de su utilidad y calidad en la preparación de los ciudadanos para cumplir con los requisitos de la ley 431 de tránsito nacional en Nicaragua.</p>
+										
+											<hr>
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/learn-drive/fun-1.png">
+															<img src="/images/projects/learn-drive/fun-1.png" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="https://play-lh.googleusercontent.com/pxCOzmJBmclmhBluVFtd8TplgqnepQmZ6Uy52zimRzewbPniYyu2HhvXj2iSeliJtw=w2560-h1440-rw">
+															<img src="https://play-lh.googleusercontent.com/pxCOzmJBmclmhBluVFtd8TplgqnepQmZ6Uy52zimRzewbPniYyu2HhvXj2iSeliJtw=w2560-h1440-rw" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="https://play-lh.googleusercontent.com/-N2NLsAONT3XEBuYsqSyYsHcHNJjIVc4aILOtbtHK90I369H0qychfe8IrAQJNL_eX21=w2560-h1440-rw">
+															<img src="https://play-lh.googleusercontent.com/-N2NLsAONT3XEBuYsqSyYsHcHNJjIVc4aILOtbtHK90I369H0qychfe8IrAQJNL_eX21=w2560-h1440-rw" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="https://play-lh.googleusercontent.com/5NAmiWB-5y0JpXjIOG6YD6pWIMy22zot-Imy3xOCdGf9cWmvW3MHZEcNpOI0Q-_flFc=w2560-h1440-rw">
+															<img src="https://play-lh.googleusercontent.com/5NAmiWB-5y0JpXjIOG6YD6pWIMy22zot-Imy3xOCdGf9cWmvW3MHZEcNpOI0Q-_flFc=w2560-h1440-rw" alt="project-image-3">
+														</a>
+													</div>
+											</div>
 										
 										</div>
 									</div>
@@ -228,21 +254,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>

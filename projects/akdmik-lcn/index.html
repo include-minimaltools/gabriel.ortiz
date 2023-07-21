@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -161,9 +164,8 @@ window.navigation.addEventListener('navigate', (event) => {
 												<li class="date">
 													Fecha:<a href="#">19/12/2022</a>
 												</li>
-												<li class="commont">
-													<i class="ion-ios-heart-outline"></i>
-													<a href="#"> 3 Comments</a>
+												<li class="commont" style="text-transform: lowercase;">
+													<a href="https://github.com/include-minimaltools/akdmik-lcn"><i style="view-transition-name: github-icon-akdmik-lcn" class="mdi mdi-github"></i> github.com/include-minimaltools/akdmik-lcn</a>
 												</li>
 											</ul>
 										</div>
@@ -218,7 +220,8 @@ window.navigation.addEventListener('navigate', (event) => {
 <ul>
 <li><a href="https://github.com/sawluis">Luis Miguel Pineda Joseph</a></li>
 </ul>
-										 
+										
+											<hr>
 											<h2>Imágenes del Proyecto</h2>
 											<div class="portfolio-container">
 												<div class="col portfolio-thumbnail">
@@ -245,6 +248,22 @@ window.navigation.addEventListener('navigate', (event) => {
 														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-6.png">
 															<img src="/images/projects/akdmik-lcn/fun-6.png" alt="project-image-5">
 														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-api-1.png">
+															<img src="/images/projects/akdmik-lcn/fun-api-1.png" alt="project-image-6">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-api-2.png">
+															<img src="/images/projects/akdmik-lcn/fun-api-2.png" alt="project-image-7">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-api-3.png">
+															<img src="/images/projects/akdmik-lcn/fun-api-3.png" alt="project-image-8">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-api-4.png">
+															<img src="/images/projects/akdmik-lcn/fun-api-4.png" alt="project-image-9">
+														</a>
 													</div>
 											</div>
 										
@@ -263,21 +282,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>
