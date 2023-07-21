@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.8.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/eva-lightning/">
+
+<!-- Primary Meta Tags -->
+<title>EVA Lightning</title>
+<meta name="title" content="EVA Lightning">
+<meta name="description" content="Eva Lightning es un proyecto de rediseño de la interfaz del Entorno Virtual de Aprendizaje utilizado por la Universidad Nacional de Ingeniería.">
+<meta name="keywords" content="Dotnet,Microsoft SQL Server,React">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/eva-lightning/">
+<meta property="og:title" content="EVA Lightning">
+<meta property="og:description" content="Eva Lightning es un proyecto de rediseño de la interfaz del Entorno Virtual de Aprendizaje utilizado por la Universidad Nacional de Ingeniería.">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/eva-lightning/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/eva-lightning/">
+<meta property="twitter:title" content="EVA Lightning">
+<meta property="twitter:description" content="Eva Lightning es un proyecto de rediseño de la interfaz del Entorno Virtual de Aprendizaje utilizado por la Universidad Nacional de Ingeniería.">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/eva-lightning/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/eva-lightning/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-eva-lightning; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-eva-lightning">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>EVA Lightning</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">10/12/2021</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<h2 id="resumen">Resumen</h2>
+<p><strong>Eva Lightning</strong> es un proyecto de rediseño de la interfaz del Entorno Virtual de Aprendizaje utilizado por la Universidad Nacional de Ingeniería. El objetivo principal es mejorar la experiencia del estudiante al visualizar las clases inscritas, conocer a sus docentes y poder subir archivos a la plataforma. El proyecto se centra en el diseño visual utilizando React, mientras que el backend API fue desarrollado en .NET Core App 2.2. Cabe mencionar que Create React App, utilizado en el desarrollo, ha quedado en desuso, lo que hace que esta aplicación sea deprecada.</p>
+<h2 id="qué-es">¿Qué es?</h2>
+<p><strong>Eva Lightning</strong> es una iniciativa para rediseñar y mejorar la interfaz de usuario del Entorno Virtual de Aprendizaje de la Universidad Nacional de Ingeniería. Este entorno proporciona a los estudiantes una plataforma donde pueden acceder a sus clases, materiales de estudio, tareas y comunicarse con sus docentes.</p>
+<p>El proyecto busca modernizar y optimizar la interfaz, ofreciendo una experiencia más intuitiva y atractiva para los estudiantes, lo que facilita la navegación y el acceso a la información relevante.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p>Las funcionalidades de <strong>Eva Lightning</strong> se enfocan en mejorar la experiencia del estudiante en el Entorno Virtual de Aprendizaje:</p>
+<ol>
+<li>
+<p><strong>Visualización de Clases</strong>: Los estudiantes pueden ver una lista de las clases en las que están inscritos. Esta funcionalidad proporciona una visión general de su horario académico y facilita el acceso rápido a cada asignatura.</p>
+</li>
+<li>
+<p><strong>Información del Docente</strong>: Los estudiantes pueden acceder a información relevante sobre sus docentes, como su nombre, fotografía y detalles de contacto. Esto ayuda a establecer una comunicación efectiva entre los estudiantes y los docentes.</p>
+</li>
+<li>
+<p><strong>Subida de Archivos</strong>: La plataforma permite a los estudiantes subir archivos y documentos relacionados con sus clases, como tareas, proyectos y materiales de estudio. Esta funcionalidad facilita el intercambio de información entre estudiantes y docentes.</p>
+</li>
+</ol>
+<h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<p>El proyecto <strong>Eva Lightning</strong> utiliza las siguientes tecnologías para su desarrollo:</p>
+<ul>
+<li>
+<p><strong>React</strong>: React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario interactivas. Permite crear componentes reutilizables y eficientes para construir una interfaz de usuario moderna y dinámica.</p>
+</li>
+<li>
+<p><strong>Create-React-App</strong>: Create-React-App fue utilizado inicialmente como herramienta para el desarrollo del frontend. Sin embargo, es importante mencionar que Create React App ha quedado en desuso, lo que significa que esta aplicación está deprecada y se recomienda utilizar otras alternativas más actualizadas para proyectos futuros.</p>
+</li>
+<li>
+<p><strong>.NET Core App 2.2</strong>: El backend API de <strong>Eva Lightning</strong> fue desarrollado utilizando .NET Core App 2.2. .NET Core es un framework de desarrollo multiplataforma y de código abierto para construir aplicaciones y servicios en .NET. La versión 2.2 proporciona funcionalidades y mejoras importantes para el desarrollo del backend del proyecto. Cabe mencionar que .NET Core App 2.2 no es la última versión de .NET recomendada, por lo que se sugiere considerar la adopción de versiones más recientes, como .NET 6 o posteriores, para obtener las últimas características, mejoras de rendimiento y actualizaciones de seguridad.</p>
+</li>
+</ul>
+<h2 id="nota">Nota</h2>
+<p>Es importante destacar que el uso de las tecnologías mencionadas en este proyecto debe ser considerado con precaución debido a su estado actual. A continuación, se presentan dos notas importantes:</p>
+<h3 id="1-create-react-app">1. Create React App</h3>
+<p>La librería <strong>Create React App</strong>, que fue utilizada inicialmente en el desarrollo del frontend de <strong>Eva Lightning</strong>, ha sido declarada como deprecada. Esto significa que no se recomienda su uso en nuevos proyectos y se sugiere buscar alternativas más actualizadas y mantenidas por la comunidad de desarrollo de React. Para proyectos futuros, se aconseja considerar otras herramientas como <strong>Webpack</strong> o <strong>Parcel</strong> para configurar y personalizar el entorno de desarrollo de aplicaciones React.</p>
+<h3 id="2-net-core-app-22">2. .NET Core App 2.2</h3>
+<p>Si bien <strong>.NET Core App 2.2</strong> fue utilizado para desarrollar el backend API de <strong>Eva Lightning</strong>, es relevante mencionar que esta versión no es la última versión de .NET recomendada. La comunidad de desarrollo de .NET ha continuado evolucionando y mejorando el framework, y se sugiere considerar la adopción de versiones más recientes de .NET Core, como .NET 6 o posteriores, para obtener las últimas características, mejoras de rendimiento y actualizaciones de seguridad.</p>
+<p>Para mantener la eficiencia, seguridad y compatibilidad con las últimas tecnologías, se aconseja siempre estar al día con las actualizaciones y utilizar las últimas versiones recomendadas por los desarrolladores de las respectivas tecnologías.</p>
+<h2 id="colaboradores">Colaboradores</h2>
+<ul>
+<li><a href="https://github.com/sawluis">Luis Miguel Pineda Joseph</a></li>
+<li><a href="https://github.com/gabsRM">Engel Gabriel Reyes Moreno</a></li>
+<li>Obed Isaí Ríos Solano</li>
+</ul>
+										 
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/eva-lightning/fun-1.png">
+															<img src="/images/projects/eva-lightning/fun-1.png" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/eva-lightning/fun-2.png">
+															<img src="/images/projects/eva-lightning/fun-2.png" alt="project-image-1">
+														</a>
+													</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>

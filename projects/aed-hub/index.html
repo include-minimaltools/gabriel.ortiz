@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.8.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/aed-hub/">
+
+<!-- Primary Meta Tags -->
+<title>AED Hub</title>
+<meta name="title" content="AED Hub">
+<meta name="description" content="AED Hub es una recopilación completa de todas las actividades relacionadas con algoritmización y estructuras de datos">
+<meta name="keywords" content="Windows Forms,DevExpress">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/aed-hub/">
+<meta property="og:title" content="AED Hub">
+<meta property="og:description" content="AED Hub es una recopilación completa de todas las actividades relacionadas con algoritmización y estructuras de datos">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/aed-hub/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/aed-hub/">
+<meta property="twitter:title" content="AED Hub">
+<meta property="twitter:description" content="AED Hub es una recopilación completa de todas las actividades relacionadas con algoritmización y estructuras de datos">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/aed-hub/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/aed-hub/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-aed-hub; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-aed-hub">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>AED Hub</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">20/9/2021</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<p><strong>AED Hub</strong> es una recopilación completa de todas las actividades relacionadas con algoritmización y estructuras de datos. La plataforma ha sido desarrollada utilizando tecnologías de WinForms y se ha empleado la librería de DevExpress en su versión trial. El objetivo principal es proporcionar una herramienta que facilite el aprendizaje y práctica de algoritmos, estructuras de datos y diseño de interfaces, además de contar con documentación detallada para cada laboratorio.</p>
+<h2 id="qué-es">¿Qué es?</h2>
+<p><strong>AED Hub</strong> es una plataforma educativa diseñada para estudiantes que están aprendiendo algoritmización y estructuras de datos. Proporciona una recopilación completa de actividades, ejercicios y laboratorios relacionados con esta área. Los usuarios de la plataforma pueden acceder a una amplia variedad de ejercicios y actividades relacionadas con el diseño de algoritmos y estructuras de datos, así como aprender sobre el desarrollo de interfaces gráficas utilizando WinForms y la versión trial de la librería de DevExpress.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p>Las funcionalidades clave de <strong>AED Hub</strong> se centran en el aprendizaje práctico de algoritmos, estructuras de datos y diseño de interfaces:</p>
+<ol>
+<li>
+<p><strong>Ejercicios de Ordenamiento</strong>: La plataforma ofrece una variedad de ejercicios prácticos para aprender y practicar diferentes algoritmos de ordenamiento de listas. Los estudiantes pueden resolver estos ejercicios para mejorar sus habilidades en la implementación de algoritmos de ordenación.</p>
+</li>
+<li>
+<p><strong>Diseño de Interfaces</strong>: <strong>AED Hub</strong> proporciona ejemplos y prácticas de diseño de interfaces gráficas utilizando WinForms y la versión trial de la librería de DevExpress. Los estudiantes pueden aprender cómo crear interfaces interactivas y visualmente atractivas para sus proyectos.</p>
+</li>
+<li>
+<p><strong>Laboratorios y Documentación</strong>: La plataforma cuenta con una sección de laboratorios donde se presentan distintos escenarios y desafíos relacionados con algoritmización y estructuras de datos. Además, cada laboratorio incluye documentación detallada que explica los conceptos y soluciones paso a paso.</p>
+</li>
+</ol>
+<h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<p>El desarrollo de <strong>AED Hub</strong> se llevó a cabo utilizando las siguientes tecnologías:</p>
+<ul>
+<li>
+<p><strong>WinForms</strong>: WinForms es una tecnología de Microsoft utilizada para crear aplicaciones de escritorio en el entorno Windows. Permite desarrollar interfaces gráficas de usuario (GUI) de manera rápida y sencilla.</p>
+</li>
+<li>
+<p><strong>DevExpress (Versión Trial)</strong>: DevExpress es una librería de componentes para .NET que facilita la creación de interfaces de usuario avanzadas y ricas en funcionalidades. La versión utilizada en <strong>AED Hub</strong> es la trial, lo que permite explorar y evaluar las características de la librería antes de adquirir una licencia completa.</p>
+</li>
+</ul>
+<h2 id="nota-sobre-la-versión-trial-de-devexpress">Nota sobre la Versión Trial de DevExpress</h2>
+<p>Es importante tener en cuenta que <strong>AED Hub</strong> utiliza la versión trial de la librería de DevExpress. La versión trial proporciona un período de prueba para explorar y evaluar las características de la librería antes de adquirir una licencia completa. Es fundamental revisar los términos y condiciones de la versión trial de DevExpress para asegurarse de cumplir con sus restricciones y considerar la adquisición de una licencia adecuada según las necesidades y el uso del proyecto.</p>
+<h2 id="colaboradores">Colaboradores</h2>
+<ul>
+<li>Marcel Emmanuel Díaz Largaespada</li>
+</ul>
+										 
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/aed-hub/fun-1.png">
+															<img src="/images/projects/aed-hub/fun-1.png" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/aed-hub/fun-2.png">
+															<img src="/images/projects/aed-hub/fun-2.png" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/aed-hub/fun-3.png">
+															<img src="/images/projects/aed-hub/fun-3.png" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/aed-hub/fun-4.png">
+															<img src="/images/projects/aed-hub/fun-4.png" alt="project-image-3">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/aed-hub/fun-5.png">
+															<img src="/images/projects/aed-hub/fun-5.png" alt="project-image-4">
+														</a>
+													</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>
