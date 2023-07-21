@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.8.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/visions/">
+
+<!-- Primary Meta Tags -->
+<title>Visions</title>
+<meta name="title" content="Visions">
+<meta name="description" content="Visions es una aplicación desarrollada en Unity que tiene como objetivo dinamizar el estudio convencional al incorporar herramientas interactivas y modelos 3D en el proceso de aprendizaje.">
+<meta name="keywords" content="Unity">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/visions/">
+<meta property="og:title" content="Visions">
+<meta property="og:description" content="Visions es una aplicación desarrollada en Unity que tiene como objetivo dinamizar el estudio convencional al incorporar herramientas interactivas y modelos 3D en el proceso de aprendizaje.">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/visions/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/visions/">
+<meta property="twitter:title" content="Visions">
+<meta property="twitter:description" content="Visions es una aplicación desarrollada en Unity que tiene como objetivo dinamizar el estudio convencional al incorporar herramientas interactivas y modelos 3D en el proceso de aprendizaje.">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/visions/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/visions/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-visions; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-visions">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Visions</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">27/2/2022</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<p><strong>Visions</strong> es una aplicación desarrollada en Unity que tiene como objetivo dinamizar el estudio convencional al incorporar herramientas interactivas y modelos 3D en el proceso de aprendizaje. La aplicación permite visualizar modelos 3D superpuestos en ilustraciones de libros y folletos, brindando una perspectiva adicional y enriquecida a los contenidos visuales.</p>
+<h2 id="qué-es">¿Qué es?</h2>
+<p><strong>Visions</strong> es una aplicación móvil y de escritorio desarrollada en Unity. Su propósito principal es mejorar la experiencia de estudio convencional al ofrecer una forma interactiva y visualmente enriquecedora de aprender. A través de la realidad aumentada, los usuarios pueden visualizar modelos 3D superpuestos en las ilustraciones de los libros y folletos, lo que permite una comprensión más profunda y detallada de los conceptos presentados.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p>Las funcionalidades clave de <strong>Visions</strong> se centran en enriquecer el proceso de aprendizaje y estudio:</p>
+<ol>
+<li>
+<p><strong>Visualización de Modelos 3D</strong>: La aplicación permite a los usuarios visualizar modelos 3D en tiempo real mediante la cámara de su dispositivo móvil o cámara web de su computadora. Estos modelos 3D se superponen en las ilustraciones de los libros y folletos, brindando una experiencia de realidad aumentada.</p>
+</li>
+<li>
+<p><strong>Interacción con los Modelos</strong>: Los usuarios pueden interactuar con los modelos 3D superpuestos, rotarlos, acercarlos o alejarlos para explorarlos desde diferentes perspectivas. Esto facilita el entendimiento de conceptos complejos y mejora la retención del conocimiento.</p>
+</li>
+<li>
+<p><strong>Navegación en el Catálogo de Modelos 3D</strong>: Además de visualizar modelos en ilustraciones de libros, la aplicación cuenta con un catálogo de modelos 3D que los usuarios pueden explorar y renderizar en el entorno virtual adrede, sin la necesidad de una ilustración física.</p>
+</li>
+<li>
+<p><strong>Enriquecimiento Visual</strong>: <strong>Visions</strong> agrega una capa adicional de información visual a los materiales educativos tradicionales. Los modelos 3D proporcionan una representación más realista y detallada de los conceptos, lo que facilita el proceso de aprendizaje y estimula el interés en los contenidos.</p>
+</li>
+</ol>
+<h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<p>El desarrollo de <strong>Visions</strong> se llevó a cabo utilizando las siguientes tecnologías:</p>
+<ul>
+<li>
+<p><strong>Unity</strong>: Unity es un motor de desarrollo de videojuegos y aplicaciones en tiempo real. Es ampliamente utilizado en el desarrollo de experiencias interactivas y de realidad aumentada.</p>
+</li>
+<li>
+<p><strong>Realidad Aumentada (AR)</strong>: La aplicación utiliza tecnología de realidad aumentada para superponer modelos 3D en el mundo real a través de la cámara del dispositivo. Esto permite una experiencia de visualización inmersiva y en tiempo real.</p>
+</li>
+</ul>
+<p><strong>Visions</strong> fue el resultado de un esfuerzo creativo y colaborativo durante el Hackatón Nicaragua 2021. Con <strong>Visions</strong>, se busca transformar la forma en que los estudiantes interactúan con los materiales de estudio convencionales, proporcionando una experiencia de aprendizaje más envolvente y efectiva. La aplicación tiene como objetivo fomentar el interés en el aprendizaje y mejorar la comprensión de conceptos complejos mediante la utilización de modelos 3D y realidad aumentada.</p>
+<h2 id="colaboradores">Colaboradores</h2>
+<ul>
+<li><a href="https://github.com/TonnyMontenegro">Ricardo Montenegro</a></li>
+<li><a href="https://github.com/MiguelHG2351">Miguel Hernández Gaitan</a></li>
+<li><a href="https://github.com/darkzense">John Torres</a></li>
+</ul>
+										 
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/visions/fun-1.jpg">
+															<img src="/images/projects/visions/fun-1.jpg" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/visions/fun-2.jpg">
+															<img src="/images/projects/visions/fun-2.jpg" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/visions/fun-3.jpg">
+															<img src="/images/projects/visions/fun-3.jpg" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/visions/fun-4.jpg">
+															<img src="/images/projects/visions/fun-4.jpg" alt="project-image-3">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/visions/fun-5.jpg">
+															<img src="/images/projects/visions/fun-5.jpg" alt="project-image-4">
+														</a>
+													</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.8.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/graphics/">
+
+<!-- Primary Meta Tags -->
+<title>Game Travel Offline App</title>
+<meta name="title" content="Game Travel Offline App">
+<meta name="description" content="Game Travel Offline es un proyecto experimental desarrollado para la clase de Programación Gráfica. El juego ofrece una experiencia de juego única utilizando gráficos primitivos dibujados línea por línea.">
+<meta name="keywords" content="Kotlin">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/graphics/">
+<meta property="og:title" content="Game Travel Offline App">
+<meta property="og:description" content="Game Travel Offline es un proyecto experimental desarrollado para la clase de Programación Gráfica. El juego ofrece una experiencia de juego única utilizando gráficos primitivos dibujados línea por línea.">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/graphics/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/graphics/">
+<meta property="twitter:title" content="Game Travel Offline App">
+<meta property="twitter:description" content="Game Travel Offline es un proyecto experimental desarrollado para la clase de Programación Gráfica. El juego ofrece una experiencia de juego única utilizando gráficos primitivos dibujados línea por línea.">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/graphics/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/graphics/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-graphics; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-graphics">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Game Travel Offline App</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">23/5/2022</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<p><strong>Game Travel Offline</strong> es un proyecto experimental desarrollado para la clase de Programación Gráfica. El juego ofrece una experiencia de juego única utilizando gráficos primitivos dibujados línea por línea. El objetivo principal de este proyecto es explorar y aplicar conceptos de programación gráfica, así como aprender a utilizar herramientas como Canvas en Kotlin para crear un juego interactivo.</p>
+<h2 id="qué-es">¿Qué es?</h2>
+<p><strong>Game Travel Offline</strong> es un juego offline de aventura y exploración diseñado como parte de un proyecto experimental para la clase de Programación Gráfica. El enfoque principal del proyecto es experimentar con la programación gráfica y aprender a crear gráficos primitivos dibujados línea por línea utilizando la herramienta Canvas en Kotlin.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p>Dado que <strong>Game Travel Offline</strong> es un proyecto experimental, las funcionalidades pueden ser limitadas y se centrarán en la exploración y experimentación de conceptos de programación gráfica:</p>
+<ol>
+<li>
+<p><strong>Exploración del Mundo Virtual</strong>: Los jugadores podrán explorar un mundo virtual creado con gráficos primitivos dibujados con la herramienta Canvas en Kotlin.</p>
+</li>
+<li>
+<p><strong>Interacción con el Entorno</strong>: Aunque los gráficos pueden ser primitivos, se buscará implementar interacción con elementos del entorno y la posibilidad de realizar acciones básicas.</p>
+</li>
+<li>
+<p><strong>Experiencia de Aprendizaje</strong>: El proyecto se enfocará en proporcionar una experiencia de aprendizaje, donde los desarrolladores podrán experimentar con la programación gráfica, aprender a dibujar gráficos línea por línea y aplicar conceptos aprendidos en la clase de Programación Gráfica.</p>
+</li>
+</ol>
+<h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<p>El desarrollo de <strong>Game Travel Offline</strong> se llevará a cabo utilizando las siguientes tecnologías:</p>
+<ul>
+<li>
+<p><strong>Kotlin</strong>: Kotlin es un lenguaje de programación versátil y moderno que se utilizará para desarrollar el juego y experimentar con conceptos de programación gráfica.</p>
+</li>
+<li>
+<p><strong>Canvas en Kotlin</strong>: La herramienta Canvas en Kotlin será utilizada para dibujar gráficos primitivos línea por línea. Con esta tecnología, se podrán experimentar y aprender diferentes técnicas de dibujo y diseño gráfico.</p>
+</li>
+</ul>
+<p><strong>Game Travel Offline</strong> es un emocionante proyecto experimental que brinda la oportunidad de sumergirse en la programación gráfica y explorar la creación de gráficos primitivos utilizando la herramienta Canvas en Kotlin. A través de este proyecto, los desarrolladores tendrán la posibilidad de aprender y aplicar conceptos clave de programación gráfica mientras crean una experiencia de juego única y entretenida.</p>
+										 
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/graphics/fun-1.jpg">
+															<img src="/images/projects/graphics/fun-1.jpg" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/graphics/fun-2.jpg">
+															<img src="/images/projects/graphics/fun-2.jpg" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/graphics/fun-3.jpg">
+															<img src="/images/projects/graphics/fun-3.jpg" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/graphics/fun-4.jpg">
+															<img src="/images/projects/graphics/fun-4.jpg" alt="project-image-3">
+														</a>
+													</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>

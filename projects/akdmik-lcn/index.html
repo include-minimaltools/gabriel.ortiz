@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.8.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/akdmik-lcn/">
+
+<!-- Primary Meta Tags -->
+<title>Akdmik</title>
+<meta name="title" content="Akdmik">
+<meta name="description" content="Akdmik es un sistema web diseñado para el registro de notas del colegio Liceo Cultural Nicaragüense. Ofrece una plataforma completa para administrar y gestionar todas las áreas relacionadas con las calificaciones y el desempeño académico de los estudiantes.">
+<meta name="keywords" content="Dotnet,Microsoft SQL Server,React">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/akdmik-lcn/">
+<meta property="og:title" content="Akdmik">
+<meta property="og:description" content="Akdmik es un sistema web diseñado para el registro de notas del colegio Liceo Cultural Nicaragüense. Ofrece una plataforma completa para administrar y gestionar todas las áreas relacionadas con las calificaciones y el desempeño académico de los estudiantes.">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/akdmik-lcn/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/akdmik-lcn/">
+<meta property="twitter:title" content="Akdmik">
+<meta property="twitter:description" content="Akdmik es un sistema web diseñado para el registro de notas del colegio Liceo Cultural Nicaragüense. Ofrece una plataforma completa para administrar y gestionar todas las áreas relacionadas con las calificaciones y el desempeño académico de los estudiantes.">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/akdmik-lcn/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/akdmik-lcn/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-akdmik-lcn; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-akdmik-lcn">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Akdmik</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">19/12/2022</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<h2 id="akdmik">Akdmik</h2>
+<p><strong>Akdmik</strong> es un sistema web diseñado para el registro de notas del colegio Liceo Cultural Nicaragüense. Ofrece una plataforma completa para administrar y gestionar todas las áreas relacionadas con las calificaciones y el desempeño académico de los estudiantes. El sistema permite a los usuarios añadir secciones, años lectivos, áreas, grados, asignaturas, parciales, estudiantes y familiares de estudiantes, así como gestionar usuarios y roles. Fue desarrollado utilizando tecnologías como React con Vite para el frontend, .NET como backend API y Microsoft SQL Server como base de datos, con la ayuda de Entity Framework para la conexión con la base de datos.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p><strong>Akdmik</strong> ofrece una variedad de funcionalidades destinadas a facilitar la administración de calificaciones y el proceso académico del colegio:</p>
+<ol>
+<li>
+<p><strong>Gestión de Secciones, Años Lectivos y Grados</strong>: Permite a los administradores crear y gestionar diferentes secciones, años lectivos y grados. Esto permite una organización eficiente de los estudiantes y las calificaciones en la plataforma.</p>
+</li>
+<li>
+<p><strong>Gestión de Áreas y Asignaturas</strong>: Facilita la creación y gestión de áreas académicas y asignaturas en el colegio. Los administradores pueden asignar asignaturas a cada grado y sección, lo que ayuda a estructurar las calificaciones de manera coherente.</p>
+</li>
+<li>
+<p><strong>Registro de Parciales y Calificaciones</strong>: Permite a los administradores registrar las calificaciones de cada estudiante en cada parcial y asignatura específica. Los profesores pueden acceder a esta funcionalidad para actualizar las calificaciones de sus respectivas asignaturas.</p>
+</li>
+<li>
+<p><strong>Gestión de Estudiantes y Familiares</strong>: Ofrece una plataforma para crear y mantener perfiles de estudiantes y sus familiares. Esta información incluye detalles de contacto, lo que permite que el colegio esté preparado para cualquier emergencia o comunicación importante.</p>
+</li>
+<li>
+<p><strong>Usuarios y Roles</strong>: El sistema cuenta con una gestión de usuarios y roles para garantizar la seguridad y el acceso adecuado. Los administradores pueden asignar diferentes niveles de acceso y privilegios a los usuarios, como administradores y profesores.</p>
+</li>
+<li>
+<p><strong>Impresión de Boletines de Calificaciones</strong>: Ofrece la posibilidad de generar e imprimir boletines de calificaciones para cada estudiante. Estos boletines reflejan las calificaciones obtenidas en cada parcial y proporcionan una vista completa del rendimiento académico del estudiante.</p>
+</li>
+<li>
+<p><strong>Validaciones de Notas</strong>: El sistema cuenta con validaciones para evitar modificaciones de calificaciones una vez que un parcial ha sido cerrado. Esto evita alteraciones no autorizadas o cambios inadecuados después de finalizado un período de calificación.</p>
+</li>
+</ol>
+<h2 id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<p><strong>Akdmik</strong> ha sido desarrollado utilizando las siguientes tecnologías:</p>
+<ul>
+<li>
+<p><strong>React con Vite</strong>: React es un framework de JavaScript ampliamente utilizado para construir interfaces de usuario interactivas. Vite es una herramienta de compilación rápida y eficiente para proyectos basados en JavaScript. La combinación de ambas tecnologías proporciona un frontend rápido y receptivo.</p>
+</li>
+<li>
+<p><strong>.NET</strong>: .NET es un framework de desarrollo de Microsoft que permite crear aplicaciones web y servicios con C# y otros lenguajes de programación. Se utiliza para crear el backend API del sistema.</p>
+</li>
+<li>
+<p><strong>Microsoft SQL Server</strong>: Microsoft SQL Server es un sistema de gestión de bases de datos relacional utilizado para almacenar y gestionar los datos del sistema, incluidas las calificaciones y la información de los estudiantes.</p>
+</li>
+<li>
+<p><strong>Entity Framework</strong>: Entity Framework es un ORM (Mapeo Relacional de Objetos) de Microsoft que simplifica la conexión y manipulación de datos entre la aplicación y la base de datos. Se utiliza para facilitar la conexión entre el backend API y la base de datos SQL Server.</p>
+</li>
+</ul>
+<h2 id="despliegue-en-iis">Despliegue en IIS</h2>
+<p>El sistema <strong>Akdmik</strong> fue desplegado en <strong>IIS</strong> (Internet Information Services), que es un servidor web y una plataforma de servicios creada por Microsoft para alojar y administrar aplicaciones web en servidores Windows.</p>
+<h3 id="qué-es-iis">¿Qué es IIS?</h3>
+<p>IIS es un componente integral del sistema operativo Windows Server y está disponible en diversas versiones según la versión del sistema operativo. Proporciona una infraestructura de servidor segura y confiable para alojar aplicaciones web, servicios y sitios web. A través de IIS, los administradores pueden configurar y administrar sitios web, aplicaciones y servicios que utilizan tecnologías como ASP.NET, PHP y otros lenguajes de programación web.</p>
+<h2 id="colaboradores">Colaboradores</h2>
+<ul>
+<li><a href="https://github.com/sawluis">Luis Miguel Pineda Joseph</a></li>
+</ul>
+										 
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-1.png">
+															<img src="/images/projects/akdmik-lcn/fun-1.png" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-2.png">
+															<img src="/images/projects/akdmik-lcn/fun-2.png" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-3.png">
+															<img src="/images/projects/akdmik-lcn/fun-3.png" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-4.png">
+															<img src="/images/projects/akdmik-lcn/fun-4.png" alt="project-image-3">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-5.png">
+															<img src="/images/projects/akdmik-lcn/fun-5.png" alt="project-image-4">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/akdmik-lcn/fun-6.png">
+															<img src="/images/projects/akdmik-lcn/fun-6.png" alt="project-image-5">
+														</a>
+													</div>
+											</div>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>
