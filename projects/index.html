@@ -12,25 +12,26 @@
 <link rel="canonical" href="https://include-minimaltools.github.io/projects/">
 
 <!-- Primary Meta Tags -->
-<title>Proyectos Personales</title>
-<meta name="title" content="Proyectos Personales">
-<meta name="description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta content="" name="keywords">
-<meta content="" name="description">
+<title>Mis proyectos personales</title>
+<meta name="title" content="Mis proyectos personales">
+<meta name="description" content="dfiajdfaofijadsfioj">
+<meta name="keywords" content="">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://include-minimaltools.github.io/projects/">
-<meta property="og:title" content="Proyectos Personales">
-<meta property="og:description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta property="og:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="og:title" content="Mis proyectos personales">
+<meta property="og:description" content="dfiajdfaofijadsfioj">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://include-minimaltools.github.io/projects/">
-<meta property="twitter:title" content="Proyectos Personales">
-<meta property="twitter:description" content="Conoce más sobre los proyectos que he desarrollado a lo largo de mi carrera de programación">
-<meta property="twitter:image" content="https://include-minimaltools.github.io/gaoa-bg.jpg">
+<meta property="twitter:title" content="Mis proyectos personales">
+<meta property="twitter:description" content="dfiajdfaofijadsfioj">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/gaoa-bg.jpg">
+
+<meta name="view-transition" content="same-origin">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -47,8 +48,10 @@
 <link href="/lib/hover/hover.min.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/logo.png">
+
+
     <link href="/css/blog.css" rel="stylesheet">
-  </head>
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
   <body>
     <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
@@ -62,28 +65,20 @@
       </div>
 
       <ul class="nav-menu list-unstyled">
-        <li>
-          <a href="/#header" class="smoothScroll">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
             Inicio
           </a>
         </li>
+        
+        
         <li>
-          <a href="/#about" class="smoothScroll">
-            Acerca
-          </a>
-        </li>
-        <li>
-          <a href="/#roadmap-section" class="smoothScroll">
-            RoadMap
-          </a>
-        </li>
-        <li>
-          <a href="/#journal" class="smoothScroll">
+          <a href="/posts">
             Blog
           </a>
         </li>
         <li>
-          <a href="/#portfolio" class="smoothScroll">
+          <a href="/projects">
             Portafolio
           </a>
         </li>
@@ -91,35 +86,6 @@
     </div>
   </div>
 </nav>
-    <main id="journal-blog" class="text-left paddsections">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Mis proyectos personales</h2>
-        </div>
-      </div>
-      <section class="container">
-        <div class="journal-block">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-				<div class="journal-info mb-30">
-  <a href="/projects/turbo-c-studio">
-    <img src="/images/turbo-c-studio/cover.jpg" class="img-responsive" alt="img">
-  </a>
-
-  <div class="journal-txt">
-    <h4>
-      <a href="/projects/turbo-c-studio">Turbo C Studio</a>
-    </h4>
-    <p class="separator">
-      Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984
-    </p>
-  </div>
-</div>
-			</div>
-          </div>
-        </div>
-      </section>
-    </main>
     <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/jquery/jquery-migrate.min.js"></script>
 <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -127,11 +93,156 @@
 <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="/lib/magnific-popup/magnific-popup.min.js"></script>
 <script src="/lib/isotope/isotope.pkgd.min.js"></script>
-
-<!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
-
-<!-- Template Main Javascript File --><script src="/js/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div id="header" class="home" style="height: 300px; display: flex; justify-content: center; align-items: center; view-transition-name: div-home">
+			<div class="text-white">
+				<h1><a class="text-secondary" href="/">Inicio</a> / <span>Portafolio</span></h1>
+		</div>
+  </div>
+	<div id="journal-blog" class="text-left paddsections">
+		<section class="container">
+		  <div class="journal-block">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/turbo-c-studio">
+    <img src="/images/projects/turbo-c-studio/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-turbo-c-studio">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-turbo-c-studio">
+      <a href="/projects/turbo-c-studio">Turbo C Studio</a>
+    </h4>
+    <p class="separator">
+      Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984
+    </p>
+  </div>
+</div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/a-favor">
+    <img src="https://play-lh.googleusercontent.com/eedrH83NSyfaLzZGQh4xqeX0uBpBX6rhxhTOEc-WM7WcmNkWg5kLqw06QnFciiQmsF7z=w416-h235-rw" class="img-responsive" alt="img" style="view-transition-name: project-hero-a-favor">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-a-favor">
+      <a href="/projects/a-favor">Haceme un paro</a>
+    </h4>
+    <p class="separator">
+      &#39;Haceme un paro&#39; es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios.
+    </p>
+  </div>
+</div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/fec-mobileapps">
+    <img src="/images/projects/fec-mobile-apps/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-fec-mobileapps">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-fec-mobileapps">
+      <a href="/projects/fec-mobileapps">Portal Feria Aplicaciones Móviles</a>
+    </h4>
+    <p class="separator">
+      Portal utilizado para la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería
+    </p>
+  </div>
+</div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/inwent">
+    <img src="/images/projects/inwent/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-inwent">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-inwent">
+      <a href="/projects/inwent">Inwent System</a>
+    </h4>
+    <p class="separator">
+      El Sistema de Facturación e Inventario es una aplicación desarrollada con tecnologías modernas que permiten una gestión eficiente de las operaciones comerciales y de inventario del negocio
+    </p>
+  </div>
+</div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/learn-drive-manager">
+    <img src="/images/projects/learn-drive-manager/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-learn-drive-manager">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-learn-drive-manager">
+      <a href="/projects/learn-drive-manager">Administrador de Ley 431</a>
+    </h4>
+    <p class="separator">
+      La aplicación &#39;Ley 431 de Nicaragua&#39; proporciona un recurso educativo y de estudio para aquellas personas que necesitan tramitar una licencia de conducir en Nicaragua.
+    </p>
+  </div>
+</div>
+						</div><div class="col-lg-4 col-md-6">
+							<div class="journal-info mb-30">
+  <a href="/projects/learn-drive">
+    <img src="/images/projects/learn-drive/hero.png" class="img-responsive" alt="img" style="view-transition-name: project-hero-learn-drive">
+  </a>
+
+  <div class="journal-txt">
+    <h4 style="view-transition-name: project-title-learn-drive">
+      <a href="/projects/learn-drive">Aplicación Ley 431 de Nicaragua</a>
+    </h4>
+    <p class="separator">
+      La aplicación &#39;Ley 431 de Nicaragua&#39; proporciona un recurso educativo y de estudio para aquellas personas que necesitan tramitar una licencia de conducir en Nicaragua.
+    </p>
+  </div>
+</div>
+						</div>		  
+			</div>
+		  </div>
+		</section>
+	</div>	
+
+    </main>
     <footer id="footer" class="text-center">
 	<div class="container">
 		<div class="socials-media text-center">

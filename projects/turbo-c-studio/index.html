@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- Global Metadata --><meta charset="utf-8">
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link rel="icon" type="image/png" href="/images/logo.png">
@@ -15,22 +15,23 @@
 <title>Turbo C Studio</title>
 <meta name="title" content="Turbo C Studio">
 <meta name="description" content="Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984">
-<meta content="" name="keywords">
-<meta content="" name="description">
+<meta name="keywords" content="Windows Forms">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://include-minimaltools.github.io/projects/turbo-c-studio/">
 <meta property="og:title" content="Turbo C Studio">
 <meta property="og:description" content="Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984">
-<meta property="og:image" content="https://include-minimaltools.github.io/images/turbo-c-studio/cover.jpg">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/turbo-c-studio/hero.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://include-minimaltools.github.io/projects/turbo-c-studio/">
 <meta property="twitter:title" content="Turbo C Studio">
 <meta property="twitter:description" content="Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984">
-<meta property="twitter:image" content="https://include-minimaltools.github.io/images/turbo-c-studio/cover.jpg">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/turbo-c-studio/hero.png">
+
+<meta name="view-transition" content="same-origin">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -47,11 +48,12 @@
 <link href="/lib/hover/hover.min.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/logo.png">
-		<link href="/css/blog.css" rel="stylesheet">
-	</head>
 
-	<body>
-		<nav id="main-nav-subpage" class="subpage-nav">
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
     <div class="container">
       <div class="logo">
@@ -63,28 +65,20 @@
       </div>
 
       <ul class="nav-menu list-unstyled">
-        <li>
-          <a href="/#header" class="smoothScroll">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
             Inicio
           </a>
         </li>
+        
+        
         <li>
-          <a href="/#about" class="smoothScroll">
-            Acerca
-          </a>
-        </li>
-        <li>
-          <a href="/#roadmap-section" class="smoothScroll">
-            RoadMap
-          </a>
-        </li>
-        <li>
-          <a href="/#journal" class="smoothScroll">
+          <a href="/posts">
             Blog
           </a>
         </li>
         <li>
-          <a href="/#portfolio" class="smoothScroll">
+          <a href="/projects">
             Portafolio
           </a>
         </li>
@@ -92,38 +86,88 @@
     </div>
   </div>
 </nav>
-		<div class="main-content paddsection">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="row">
-							<div class="container-main single-main">
-								<div class="col-md-12">
-									<div class="block-main mb-30">
-										<img src="/images/turbo-c-studio/cover.jpg" class="img-responsive" alt="reviews2">
-										<div class="content-main single-post padDiv">
-											<div class="journal-txt">
-												<h4>
-													<a href="/projects">Turbo C Studio</a>
-												</h4>
-											</div>
-											<div class="post-meta">
-												<ul class="list-unstyled mb-0">
-													<li class="author">
-														by:
-														<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
-													</li>
-													<li class="date">
-														date:<a href="#">8/3/2021</a>
-													</li>
-													<li class="commont">
-														<i class="ion-ios-heart-outline"></i>
-														<a href="#"> 3 Comments</a>
-													</li>
-												</ul>
-											</div>
-											
-	<p>Debido a que la Universidad Nacional de Ingeniería (UNI) tiene como principal lenguaje para la enseñanza de lógica de programación el lenguaje de Turbo C 2.0, sus estudiantes deben presentar proyectos y aplicaciones codificadas desde el emulador de DOSBox, esto se puede profundizar más a detalle en el artículo <a href="/projects">Turbo C 2.0</a>. Esto supone muchas limitantes a la hora de desarrollar una aplicación y debido a esos problemas surge la aplicación de <strong>Turbo C Studio</strong></p>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/turbo-c-studio/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-turbo-c-studio; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-turbo-c-studio">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Turbo C Studio</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">8/3/2021</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<p>Debido a que la Universidad Nacional de Ingeniería (UNI) tiene como principal lenguaje para la enseñanza de lógica de programación el lenguaje de Turbo C 2.0, sus estudiantes deben presentar proyectos y aplicaciones codificadas desde el emulador de DOSBox, esto se puede profundizar más a detalle en el artículo <a href="/projects">Turbo C 2.0</a>. Esto supone muchas limitantes a la hora de desarrollar una aplicación y debido a esos problemas surge la aplicación de <strong>Turbo C Studio</strong></p>
 <h3 id="qué-es-turbo-c-studio">¿Qué es Turbo C Studio?</h3>
 <p><strong>Turbo C Studio</strong> (TCS) es un asistente para la creación de formularios y un entorno virtual gráfico en MS-DOS mediante el cual se pretende simular una versión reciente del sistema operativo de Windows 11, también funciona como instalador de la máquina virtual que simula MS-DOS “DOSBOX” y del lenguaje de programación utilizado ‘Turbo C 2.0’, además anexa la funcionalidad de instalar un editor de texto de Microsoft llamado Visual Studio Code.</p>
 <p><img src="/images/turbo-c-studio/main.png" alt="Pantalla inicial de la aplicación de Turbo C Studio"></p>
@@ -140,8 +184,6 @@
 <p><img src="/images/turbo-c-studio/setting.png" alt="Configuración"></p>
 <h3 id="conclusión">Conclusión</h3>
 <p>Si eres de primer año de la carrera de Ingeniería en Computación en la UNI, esta aplicación será de mucha ayuda para ti y tus iniciaciones en el desactualizado Turbo C 2.0, te servirá para guiarte en el tema de funciones, tipos de datos, estructura de datos, punteros, modo gráfico, etc. Te invitamos cordialmente a utilizar el programa para tu beneficio, sin embargo, el plagio del código dado con el archivo .c de Windows sería muy evidente en caso que lo quieras entregar como tuyo propio, así que te recomendamos que no lo hagas.</p>
-
-										</div>
 									</div>
 								</div>
 							</div>
@@ -150,19 +192,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/jquery/jquery-migrate.min.js"></script>
-<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/lib/typed/typed.js"></script>
-<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
-<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+	</div>
 
-<!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
-
-<!-- Template Main Javascript File --><script src="/js/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-		<footer id="footer" class="text-center">
+    </main>
+    <footer id="footer" class="text-center">
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
@@ -184,4 +217,4 @@
 		</div>
 	</div>
 </footer>
-	</body></html>
+  </body></html>
