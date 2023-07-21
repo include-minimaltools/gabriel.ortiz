@@ -1,5 +1,4 @@
-/*global $, jQuery, alert*/
-$(document).ready(function () {
+function main() {
   "use strict";
 
   // ========================================================================= //
@@ -45,6 +44,7 @@ $(document).ready(function () {
       var scrollPos = $(document).scrollTop();
       $("nav ul li a").each(function () {
         var currLink = $(this);
+        if (!currLink[0].hash) return;
         var refElement = $(currLink.attr("href"));
       });
     }
@@ -152,4 +152,8 @@ $(document).ready(function () {
 
   // Call the functions
   magnifPopup();
-});
+  $("#main-nav").hide();
+}
+
+/*global $, jQuery, alert*/
+$(document).ready(main);

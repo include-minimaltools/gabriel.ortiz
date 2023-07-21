@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.6.4">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/fec-mobileapps/">
+
+<!-- Primary Meta Tags -->
+<title>Portal Feria Aplicaciones Móviles</title>
+<meta name="title" content="Portal Feria Aplicaciones Móviles">
+<meta name="description" content="Portal utilizado para la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería">
+<meta name="keywords" content="Next,Firebase">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/fec-mobileapps/">
+<meta property="og:title" content="Portal Feria Aplicaciones Móviles">
+<meta property="og:description" content="Portal utilizado para la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería">
+<meta property="og:image" content="https://include-minimaltools.github.io/images/projects/fec-mobile-apps/hero.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/fec-mobileapps/">
+<meta property="twitter:title" content="Portal Feria Aplicaciones Móviles">
+<meta property="twitter:description" content="Portal utilizado para la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería">
+<meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/fec-mobile-apps/hero.png">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="/images/projects/fec-mobile-apps/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-fec-mobileapps; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-fec-mobileapps">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Portal Feria Aplicaciones Móviles</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">4/7/2023</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<p>El <strong>Portal de la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería</strong> fue creado con el propósito de organizar y facilitar la realización de una feria en la que los desarrolladores y creadores de aplicaciones móviles puedan presentar sus proyectos. Esta plataforma ofrece una experiencia interactiva y moderna, gracias a la utilización de tecnologías de vanguardia como Firebase y NextJS.</p>
+<hr>
+<h2 id="qué-es-el-portal-feria-aplicaciones-móviles">¿Qué es el Portal Feria Aplicaciones Móviles?</h2>
+<p>El proyecto es una plataforma web que busca impulsar la innovación y promover el talento en el mundo de las aplicaciones móviles. Se presenta como un espacio virtual donde los desarrolladores pueden exhibir sus creaciones y recibir el reconocimiento del público y un jurado de expertos.</p>
+<p>La idea central del proyecto es brindar una feria en la que los participantes tengan la oportunidad de mostrar el fruto de su trabajo en forma de aplicaciones móviles. A través de esta feria, se busca fomentar la colaboración, el aprendizaje y la competencia saludable entre los participantes, permitiéndoles mostrar sus habilidades y creatividad en un entorno competitivo pero amigable.</p>
+<hr>
+<h2 id="funcionalidades-del-proyecto">Funcionalidades del proyecto</h2>
+<h3 id="iniciar-sesión-con-google">Iniciar sesión con Google</h3>
+<p>El portal ofrece a los usuarios la posibilidad de iniciar sesión utilizando sus cuentas de Google. Esta funcionalidad simplifica el proceso de autenticación y garantiza un acceso seguro a la plataforma.</p>
+<h3 id="votación-del-jurado">Votación del jurado</h3>
+<p>Los miembros del jurado, previamente registrados en el sistema, pueden votar por los distintos proyectos presentados en la feria. Para cada proyecto, se evalúan 5 criterios específicos: Presentación, complejidad, innovación, funcionalidad e interfaz de usuario. Cada criterio puede ser calificado con un máximo de 5 estrellas, permitiendo una evaluación precisa y justa de las aplicaciones.</p>
+<h3 id="edición-de-proyectos-por-participantes">Edición de proyectos por participantes</h3>
+<p>Los participantes que poseen una cuenta de Google y han sido designados como “participantes” por el administrador, pueden acceder a una pantalla exclusiva para editar la información de sus proyectos. Aquí es donde pueden proporcionar una descripción detallada de su aplicación utilizando el formato Markdown. Esta descripción será posteriormente procesada y mostrada en la página de presentación del proyecto.</p>
+<h3 id="contador-de-tiempo-para-el-evento">Contador de tiempo para el evento</h3>
+<p>El portal muestra un contador que indica el tiempo restante para que se lleve a cabo la feria de aplicaciones móviles. Esta cuenta regresiva crea un sentido de anticipación y mantiene a los interesados informados sobre la fecha y hora del evento.</p>
+<h3 id="resultados-y-gráficas-para-el-administrador">Resultados y gráficas para el administrador</h3>
+<p>El administrador del portal tiene acceso a una pantalla exclusiva donde puede visualizar los resultados de las votaciones realizadas por el jurado. Además, se presentan gráficas y estadísticas que ofrecen una representación clara y concisa del desempeño de los proyectos. Esta información es de gran utilidad para el proceso de toma de decisiones y la entrega de premios durante el evento.</p>
+<hr>
+<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
+<p>El desarrollo del portal de la Feria de Aplicaciones Móviles se basó en el uso de las siguientes tecnologías:</p>
+<h3 id="firebase">Firebase</h3>
+<p>Firebase es una plataforma de desarrollo de aplicaciones móviles y web que proporciona una amplia gama de servicios en la nube, como autenticación de usuarios, almacenamiento de datos en tiempo real y hospedaje de contenido estático. En este proyecto, Firebase se utiliza para implementar la funcionalidad de inicio de sesión con Google, almacenar los datos de los proyectos y los votos del jurado, así como para gestionar la autenticación de los usuarios.</p>
+<h3 id="nextjs">NextJS</h3>
+<p>NextJS es un framework de React que ofrece la capacidad de realizar renderizado del lado del servidor (SSR) y del lado del cliente (CSR). Esto permite crear aplicaciones web de alto rendimiento y optimizadas para SEO. En el proyecto de la Feria de Aplicaciones Móviles, NextJS se utiliza para crear páginas dinámicas con contenido generado en el servidor. Gracias a esto, cada proyecto presentado cuenta con metadatos personalizados para mejorar su visibilidad y accesibilidad.</p>
+<h3 id="netlify">Netlify</h3>
+<p>Netlify es una plataforma de alojamiento y despliegue para sitios web y aplicaciones. En este proyecto, Netlify se utiliza para implementar y poner en línea el portal de la feria. La plataforma proporciona una forma sencilla y segura de publicar el proyecto en la web, asegurando su disponibilidad y accesibilidad para los usuarios.</p>
+<p>En conjunto, la combinación de Firebase, NextJS y Netlify permite la creación de un portal de Feria de Aplicaciones Móviles interactivo, funcional y atractivo, que brinda una experiencia satisfactoria tanto a los participantes como al jurado y al administrador del evento.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>

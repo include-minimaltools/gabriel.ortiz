@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<meta name="generator" content="Astro v2.6.4">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://include-minimaltools.github.io/projects/a-favor/">
+
+<!-- Primary Meta Tags -->
+<title>Haceme un paro</title>
+<meta name="title" content="Haceme un paro">
+<meta name="description" content="'Haceme un paro' es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios.">
+<meta name="keywords" content="React Native,Firebase">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://include-minimaltools.github.io/projects/a-favor/">
+<meta property="og:title" content="Haceme un paro">
+<meta property="og:description" content="'Haceme un paro' es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios.">
+<meta property="og:image" content="https://play-lh.googleusercontent.com/eedrH83NSyfaLzZGQh4xqeX0uBpBX6rhxhTOEc-WM7WcmNkWg5kLqw06QnFciiQmsF7z=w416-h235-rw">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://include-minimaltools.github.io/projects/a-favor/">
+<meta property="twitter:title" content="Haceme un paro">
+<meta property="twitter:description" content="'Haceme un paro' es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios.">
+<meta property="twitter:image" content="https://play-lh.googleusercontent.com/eedrH83NSyfaLzZGQh4xqeX0uBpBX6rhxhTOEc-WM7WcmNkWg5kLqw06QnFciiQmsF7z=w416-h235-rw">
+
+<meta name="view-transition" content="same-origin">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<link href="/fontawesome/css/all.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/materialdesignicons.css" rel="stylesheet">
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="/lib/hover/hover.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/logo.png">
+
+
+    <link href="/css/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <body>
+    <nav id="main-nav-subpage" class="subpage-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" style="object-fit: contain;" alt="logo"></a>
+      </div>
+
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+
+      <ul class="nav-menu list-unstyled">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
+            Inicio
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="/posts">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            Portafolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
+    <main>
+      
+	<div class="main-content paddsection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="container-main single-main">
+							<div class="col-md-12">
+								<div class="block-main mb-30">
+									<img src="https://play-lh.googleusercontent.com/eedrH83NSyfaLzZGQh4xqeX0uBpBX6rhxhTOEc-WM7WcmNkWg5kLqw06QnFciiQmsF7z=w416-h235-rw" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-a-favor; width: 100%">
+									<div class="content-main single-post padDiv">
+										<div class="journal-txt">
+											<h1 style="view-transition-name: project-title-a-favor">
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Haceme un paro</a>
+											</h1>
+										</div>
+										<div class="post-meta">
+											<ul class="list-unstyled mb-0">
+												<li class="author">
+													Author:
+													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
+												</li>
+												<li class="date">
+													Fecha:<a href="#">4/7/2023</a>
+												</li>
+												<li class="commont">
+													<i class="ion-ios-heart-outline"></i>
+													<a href="#"> 3 Comments</a>
+												</li>
+											</ul>
+										</div>
+										<h2 id="registro-de-microprestamos-entre-amigos">Registro de Microprestamos entre Amigos</h2>
+<p>“Haceme un paro” es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios. La aplicación permite registrar manualmente los préstamos, enviar y aceptar solicitudes de amistad, y llevar un registro de las deudas pendientes entre los amigos. Utiliza Firebase para gestionar la autenticación de usuarios, almacenar datos en tiempo real y enviar notificaciones push mediante Firebase Messaging.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<ul>
+<li>
+<p><strong>Inicio de sesión con Google</strong>: La aplicación cuenta con un sistema de autenticación mediante Google, lo que permite a los usuarios guardar sus transacciones en la nube y vincular sus cuentas en diferentes dispositivos. La autenticación con Google garantiza la seguridad y confidencialidad de la información de los usuarios.</p>
+</li>
+<li>
+<p><strong>Solicitudes de amistad</strong>: Una vez que los usuarios han iniciado sesión, tienen la opción de enviar solicitudes de amistad a otros usuarios dentro de la aplicación. Al ser aceptadas, los amigos aparecerán en una lista que facilita el proceso de realizar préstamos entre ellos.</p>
+</li>
+<li>
+<p><strong>Registro de préstamos</strong>: Para realizar un préstamo, el usuario debe ingresar el monto prestado y una descripción del mismo. Al hacerlo, la aplicación enviará una notificación al teléfono del amigo al que se le está realizando el préstamo. El amigo debe aceptar la solicitud para que el préstamo quede registrado en la aplicación.</p>
+</li>
+<li>
+<p><strong>Registro de deudas y cuentas pendientes</strong>: La aplicación mantiene un registro de los préstamos realizados y las deudas pendientes entre amigos. De esta manera, los usuarios pueden verificar fácilmente cuánto dinero le deben a cada amigo y cuánto dinero deben recibir de ellos. Esto permite mantener una cuenta clara y precisa de las transacciones entre los usuarios.</p>
+</li>
+<li>
+<p><strong>Cierre de cuentas</strong>: Cuando los usuarios deciden saldar las deudas, la aplicación facilita el cierre de cuentas, indicando cuál es el monto final a pagar o recibir. Los usuarios pueden reunirse y pasarse el dinero tanto en efectivo como por transacción para resolver las deudas pendientes.</p>
+</li>
+</ul>
+<h2 id="tecnologías">Tecnologías</h2>
+<p>La aplicación “Haceme un paro” se desarrolló utilizando las siguientes tecnologías:</p>
+<ul>
+<li>
+<p><strong>React Native</strong>: React Native es un framework de desarrollo de aplicaciones móviles que permite construir aplicaciones nativas para iOS y Android utilizando JavaScript. Esta tecnología proporciona una experiencia de usuario fluida y una interfaz de usuario atractiva.</p>
+</li>
+<li>
+<p><strong>Firebase Authentication</strong>: Firebase Authentication es un servicio de Firebase que ofrece soluciones de autenticación seguras y confiables. En “Haceme un paro”, se utiliza para permitir el inicio de sesión con Google y gestionar la identidad de los usuarios.</p>
+</li>
+<li>
+<p><strong>Firestore</strong>: Firestore es una base de datos en tiempo real de Firebase que permite almacenar y sincronizar datos entre los usuarios de manera eficiente. En la aplicación, se utiliza para almacenar los registros de préstamos y las cuentas pendientes.</p>
+</li>
+<li>
+<p><strong>Firebase Storage</strong>: Firebase Storage es un servicio de Firebase que proporciona almacenamiento de archivos en la nube. En “Haceme un paro”, se utiliza para guardar y gestionar archivos relacionados con la aplicación.</p>
+</li>
+<li>
+<p><strong>Firebase Messaging</strong>: Firebase Messaging es un servicio de Firebase que permite enviar notificaciones push a los dispositivos móviles de los usuarios. Esta tecnología se emplea en la aplicación para enviar notificaciones al amigo receptor del préstamo y solicitar su aceptación.</p>
+</li>
+</ul>
+<h2 id="disponibilidad-en-play-store">Disponibilidad en Play Store</h2>
+<p>La aplicación “Haceme un paro” se encuentra actualmente disponible en la tienda de aplicaciones <strong><a href="https://play.google.com/store/apps/details?id=com.minimaltools.afavor&#x26;hl=es&#x26;gl=US">Play Store</a></strong> para dispositivos Android. Los usuarios interesados pueden descargarla de manera gratuita y empezar a utilizarla para llevar un registro de sus microprestamos con amigos de forma sencilla y segura. Enlace <strong><a href="https://play.google.com/store/apps/details?id=com.minimaltools.afavor&#x26;hl=es&#x26;gl=US">aquí</a></strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </main>
+    <footer id="footer" class="text-center">
+	<div class="container">
+		<div class="socials-media text-center">
+			<ul class="list-unstyled">
+				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</div>
+
+		<p>
+			2023 &copy; Copyrights Minimal Tools
+		</p>
+
+		<div class="credits">
+			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+		</div>
+	</div>
+</footer>
+  </body></html>

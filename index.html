@@ -6,7 +6,7 @@
 
 <link rel="icon" type="image/png" href="/images/logo.png">
 
-<meta name="generator" content="Astro v2.8.5">
+<meta name="generator" content="Astro v2.6.4">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://include-minimaltools.github.io/">
@@ -65,28 +65,31 @@
       </div>
 
       <ul class="nav-menu list-unstyled">
-        <li>
+        <li class="view-transition-name: nav-home">
           <a href="#header" class="smoothScroll">
             Inicio
           </a>
         </li>
+        
+        
+          <li>
+            <a href="#about" class="smoothScroll">
+              Acerca
+            </a>
+          </li>
+          <li>
+            <a href="#roadmap-section" class="smoothScroll">
+              RoadMap
+            </a>
+          </li>
+        
         <li>
-          <a href="#about" class="smoothScroll">
-            Acerca
-          </a>
-        </li>
-        <li>
-          <a href="#roadmap-section" class="smoothScroll">
-            RoadMap
-          </a>
-        </li>
-        <li>
-          <a href="#journal" class="smoothScroll">
+          <a href="/posts">
             Blog
           </a>
         </li>
         <li>
-          <a href="#portfolio" class="smoothScroll">
+          <a href="/projects">
             Portafolio
           </a>
         </li>
@@ -94,9 +97,58 @@
     </div>
   </div>
 </nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
     <main>
       
-  <div id="header" class="home">
+  <div id="header" class="home" style="view-transition-name: div-home">
     <div class="container">
       <div class="header-content">
         <h1>Soy <span class="typed"></span></h1>
@@ -290,7 +342,8 @@
   </div>
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script>
-    const links = [
+    function onRoadmap() {
+      const links = [
       {
         source: "Inicio",
         target: "Calculadora",
@@ -540,6 +593,8 @@
     function transform(d) {
       return "translate(" + d.x + "," + d.y + ")";
     }
+    }
+    $(document).ready(onRoadmap);
   </script>
 </section>
 
@@ -556,7 +611,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
                   <a href="/posts/turbo-c-2">
-                    <img src="/posts/turbo-c-2/hero.png" class="img-responsive" style="object-fit: contain; view-transition-name: post-hero-turbo-c-2" alt="img">
+                    <img src="/images/posts/turbo-c-2/hero.png" class="img-responsive" style="object-fit: contain; view-transition-name: post-hero-turbo-c-2" alt="img">
                   </a>
                   <div class="journal-txt">
                     <h4 style="view-transition-name: post-title-turbo-c-2">
@@ -603,7 +658,29 @@
                     </a>
                     <div class="journal-txt">
                       <h4 style="view-transition-name: project-title-turbo-c-studio">
-                        <a href="/projects/turbo-c-studio">Turbo C Studio</a>
+                        <a class="text-secondary" href="/projects/turbo-c-studio">Turbo C Studio</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div><div class="col-lg-4 col-md-6 portfolio-thumbnail all React Native Firebase">
+                  <div class="journal-info">
+                    <a href="/projects/a-favor">
+                      <img style="view-transition-name: project-hero-a-favor" src="https://play-lh.googleusercontent.com/eedrH83NSyfaLzZGQh4xqeX0uBpBX6rhxhTOEc-WM7WcmNkWg5kLqw06QnFciiQmsF7z=w416-h235-rw" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4 style="view-transition-name: project-title-a-favor">
+                        <a class="text-secondary" href="/projects/a-favor">Haceme un paro</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div><div class="col-lg-4 col-md-6 portfolio-thumbnail all Next Firebase">
+                  <div class="journal-info">
+                    <a href="/projects/fec-mobileapps">
+                      <img style="view-transition-name: project-hero-fec-mobileapps" src="/images/projects/fec-mobile-apps/hero.png" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4 style="view-transition-name: project-title-fec-mobileapps">
+                        <a class="text-secondary" href="/projects/fec-mobileapps">Portal Feria Aplicaciones Móviles</a>
                       </h4>
                     </div>
                   </div>
@@ -614,7 +691,29 @@
                     </a>
                     <div class="journal-txt">
                       <h4 style="view-transition-name: project-title-inwent">
-                        <a href="/projects/inwent">Inwent System</a>
+                        <a class="text-secondary" href="/projects/inwent">Inwent System</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div><div class="col-lg-4 col-md-6 portfolio-thumbnail all Next Firebase">
+                  <div class="journal-info">
+                    <a href="/projects/learn-drive-manager">
+                      <img style="view-transition-name: project-hero-learn-drive-manager" src="/images/projects/learn-drive-manager/hero.png" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4 style="view-transition-name: project-title-learn-drive-manager">
+                        <a class="text-secondary" href="/projects/learn-drive-manager">Administrador de Ley 431</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div><div class="col-lg-4 col-md-6 portfolio-thumbnail all React Native Firebase">
+                  <div class="journal-info">
+                    <a href="/projects/learn-drive">
+                      <img style="view-transition-name: project-hero-learn-drive" src="/images/projects/learn-drive/hero.png" class="img-responsive" alt="img">
+                    </a>
+                    <div class="journal-txt">
+                      <h4 style="view-transition-name: project-title-learn-drive">
+                        <a class="text-secondary" href="/projects/learn-drive">Aplicación Ley 431 de Nicaragua</a>
                       </h4>
                     </div>
                   </div>
@@ -626,49 +725,6 @@
   </div>
 
     </main>
-    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/jquery/jquery-migrate.min.js"></script>
-<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/lib/typed/typed.js"></script>
-<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
-<script src="/lib/isotope/isotope.pkgd.min.js"></script>
-
-<!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
-
-<!-- Template Main Javascript File --><script>
-window.navigation.addEventListener('navigate', (event) => {
-  const toUrl = new URL(event.destination.url);
-
-  if (location.origin !== toUrl.origin || toUrl.href.includes('#')) return;
-
-
-  event.intercept({
-    async handler() {
-      const response = await fetch(toUrl.pathname);
-      const text = await response.text();
-
-      // const [, mainHTML] = text.match(/<main>([\s\S]*)<\/main>/i);
-      const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
-      const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
-
-      document.startViewTransition(() => {
-        // const main = document.getElementsByTagName('main');
-        const head = document.getElementsByTagName('head');
-        const body = document.getElementsByTagName('body');
-
-        document.documentElement.scrollTop = 0;
-        // main[0].innerHTML = mainHTML;
-        head[0].innerHTML = headHTML;
-        body[0].innerHTML = bodyHTML;
-      })
-    }
-  })
-})
-</script>
-
-<script src="/js/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <footer id="footer" class="text-center">
 	<div class="container">
 		<div class="socials-media text-center">

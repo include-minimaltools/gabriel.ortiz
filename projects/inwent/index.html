@@ -6,7 +6,7 @@
 
 <link rel="icon" type="image/png" href="/images/logo.png">
 
-<meta name="generator" content="Astro v2.8.5">
+<meta name="generator" content="Astro v2.6.4">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://include-minimaltools.github.io/projects/inwent/">
@@ -14,21 +14,21 @@
 <!-- Primary Meta Tags -->
 <title>Inwent System</title>
 <meta name="title" content="Inwent System">
-<meta name="description" content="Sistema de facturación e inventario de productos y servicios para salón de belleza Rebet's Salon">
+<meta name="description" content="El Sistema de Facturación e Inventario es una aplicación desarrollada con tecnologías modernas que permiten una gestión eficiente de las operaciones comerciales y de inventario del negocio">
 <meta name="keywords" content="Angular,Dotnet,Microsoft SQL Server">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://include-minimaltools.github.io/projects/inwent/">
 <meta property="og:title" content="Inwent System">
-<meta property="og:description" content="Sistema de facturación e inventario de productos y servicios para salón de belleza Rebet's Salon">
+<meta property="og:description" content="El Sistema de Facturación e Inventario es una aplicación desarrollada con tecnologías modernas que permiten una gestión eficiente de las operaciones comerciales y de inventario del negocio">
 <meta property="og:image" content="https://include-minimaltools.github.io/images/projects/inwent/hero.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://include-minimaltools.github.io/projects/inwent/">
 <meta property="twitter:title" content="Inwent System">
-<meta property="twitter:description" content="Sistema de facturación e inventario de productos y servicios para salón de belleza Rebet's Salon">
+<meta property="twitter:description" content="El Sistema de Facturación e Inventario es una aplicación desarrollada con tecnologías modernas que permiten una gestión eficiente de las operaciones comerciales y de inventario del negocio">
 <meta property="twitter:image" content="https://include-minimaltools.github.io/images/projects/inwent/hero.png">
 
 <meta name="view-transition" content="same-origin">
@@ -65,28 +65,20 @@
       </div>
 
       <ul class="nav-menu list-unstyled">
-        <li>
-          <a href="/#header" class="smoothScroll">
+        <li class="view-transition-name: nav-home">
+          <a href="/" class="smoothScroll">
             Inicio
           </a>
         </li>
+        
+        
         <li>
-          <a href="/#about" class="smoothScroll">
-            Acerca
-          </a>
-        </li>
-        <li>
-          <a href="/#roadmap-section" class="smoothScroll">
-            RoadMap
-          </a>
-        </li>
-        <li>
-          <a href="/#journal" class="smoothScroll">
+          <a href="/posts">
             Blog
           </a>
         </li>
         <li>
-          <a href="/#portfolio" class="smoothScroll">
+          <a href="/projects">
             Portafolio
           </a>
         </li>
@@ -94,6 +86,55 @@
     </div>
   </div>
 </nav>
+    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/typed/typed.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<script defer>
+window.navigation.addEventListener('navigate', (event) => {
+  const toUrl = new URL(event.destination.url);
+
+  if (location.origin !== toUrl.origin || location.pathname === toUrl.pathname || !document?.startViewTransition) return;
+
+
+  event.intercept({
+    async handler() {
+      try {
+        const response = await fetch(toUrl.pathname);
+        const text = await response.text();
+
+        const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
+        const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
+
+        document.startViewTransition(() => {
+          const head = document.getElementsByTagName('head');
+          const body = document.getElementsByTagName('body');
+
+          if (!toUrl.hash.includes("#"))
+            document.documentElement.scrollTop = 0;
+          head[0].innerHTML = headHTML;
+          body[0].innerHTML = bodyHTML;
+          if (toUrl.pathname === "/") {
+            onRoadmap();
+            main();
+            $("#main-nav").hide();
+          }
+        })
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  })
+})
+</script>
     <main>
       
 	<div class="main-content paddsection">
@@ -104,21 +145,21 @@
 						<div class="container-main single-main">
 							<div class="col-md-12">
 								<div class="block-main mb-30">
-									<img src="/images/projects/inwent/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-inwent">
+									<img src="/images/projects/inwent/hero.png" class="img-responsive" alt="reviews2" style="view-transition-name: project-hero-inwent; width: 100%">
 									<div class="content-main single-post padDiv">
 										<div class="journal-txt">
 											<h1 style="view-transition-name: project-title-inwent">
-												<a href="/projects">Inwent System</a>
+												<a href="/projects"><i class="mdi mdi-arrow-left" style="font-size: 2rem; margin-right: 1rem;"></i>Inwent System</a>
 											</h1>
 										</div>
 										<div class="post-meta">
 											<ul class="list-unstyled mb-0">
 												<li class="author">
-													by:
+													Author:
 													<a target="_blank" href="https://github.com/include-minimaltools">include-minimaltools</a>
 												</li>
 												<li class="date">
-													date:<a href="#">4/7/2023</a>
+													Fecha:<a href="#">4/7/2023</a>
 												</li>
 												<li class="commont">
 													<i class="ion-ios-heart-outline"></i>
@@ -269,49 +310,6 @@
 	</div>
 
     </main>
-    <!-- JavaScript Libraries --><script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/jquery/jquery-migrate.min.js"></script>
-<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/lib/typed/typed.js"></script>
-<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
-<script src="/lib/isotope/isotope.pkgd.min.js"></script>
-
-<!-- Contact Form JavaScript File --><script src="/contactform/contactform.js"></script>
-
-<!-- Template Main Javascript File --><script>
-window.navigation.addEventListener('navigate', (event) => {
-  const toUrl = new URL(event.destination.url);
-
-  if (location.origin !== toUrl.origin || toUrl.href.includes('#')) return;
-
-
-  event.intercept({
-    async handler() {
-      const response = await fetch(toUrl.pathname);
-      const text = await response.text();
-
-      // const [, mainHTML] = text.match(/<main>([\s\S]*)<\/main>/i);
-      const [, headHTML] = text.match(/<head>([\s\S]*)<\/head>/i);
-      const [, bodyHTML] = text.match(/<body>([\s\S]*)<\/body>/i);
-
-      document.startViewTransition(() => {
-        // const main = document.getElementsByTagName('main');
-        const head = document.getElementsByTagName('head');
-        const body = document.getElementsByTagName('body');
-
-        document.documentElement.scrollTop = 0;
-        // main[0].innerHTML = mainHTML;
-        head[0].innerHTML = headHTML;
-        body[0].innerHTML = bodyHTML;
-      })
-    }
-  })
-})
-</script>
-
-<script src="/js/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <footer id="footer" class="text-center">
 	<div class="container">
 		<div class="socials-media text-center">

@@ -162,6 +162,16 @@ strong {
   color: #999999;
 }
 
-.content-main a, .content-main ul li, .content-main ol li::marker, .content-main h3, h4 {
+.content-main a, .content-main ul li, .content-main ol li::marker, .content-main h4 {
+  color: #999999;
+}
+
+.content-main h3 {
+  font-size: larger;
+  color: #999999;
+}
+
+.content-main h2 {
+  font-size: x-large;
   color: #999999;
 }
