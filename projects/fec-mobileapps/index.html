@@ -51,7 +51,7 @@
 
 
     <link href="/css/blog.css" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /></head>
+  <link rel="stylesheet" href="/_astro/index.6e48bd3c.css" /><link rel="stylesheet" href="/_astro/LiteYouTubeEmbed.4f7e649e.css" /></head>
   <body>
     <nav id="main-nav-subpage" class="subpage-nav">
   <div class="row">
@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -161,18 +164,17 @@ window.navigation.addEventListener('navigate', (event) => {
 												<li class="date">
 													Fecha:<a href="#">21/7/2023</a>
 												</li>
-												<li class="commont">
-													<i class="ion-ios-heart-outline"></i>
-													<a href="#"> 3 Comments</a>
+												<li class="commont" style="text-transform: lowercase;">
+													<a href="https://github.com/include-minimaltools/fec-mobile-apps"><i style="view-transition-name: github-icon-fec-mobileapps" class="mdi mdi-github"></i> github.com/include-minimaltools/fec-mobile-apps</a>
 												</li>
 											</ul>
 										</div>
 										<p>El <strong>Portal de la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería</strong> fue creado con el propósito de organizar y facilitar la realización de una feria en la que los desarrolladores y creadores de aplicaciones móviles puedan presentar sus proyectos. Esta plataforma ofrece una experiencia interactiva y moderna, gracias a la utilización de tecnologías de vanguardia como Firebase y NextJS.</p>
-<hr>
+<hr/>
 <h2 id="qué-es-el-portal-feria-aplicaciones-móviles">¿Qué es el Portal Feria Aplicaciones Móviles?</h2>
 <p>El proyecto es una plataforma web que busca impulsar la innovación y promover el talento en el mundo de las aplicaciones móviles. Se presenta como un espacio virtual donde los desarrolladores pueden exhibir sus creaciones y recibir el reconocimiento del público y un jurado de expertos.</p>
 <p>La idea central del proyecto es brindar una feria en la que los participantes tengan la oportunidad de mostrar el fruto de su trabajo en forma de aplicaciones móviles. A través de esta feria, se busca fomentar la colaboración, el aprendizaje y la competencia saludable entre los participantes, permitiéndoles mostrar sus habilidades y creatividad en un entorno competitivo pero amigable.</p>
-<hr>
+<hr/>
 <h2 id="funcionalidades-del-proyecto">Funcionalidades del proyecto</h2>
 <h3 id="iniciar-sesión-con-google">Iniciar sesión con Google</h3>
 <p>El portal ofrece a los usuarios la posibilidad de iniciar sesión utilizando sus cuentas de Google. Esta funcionalidad simplifica el proceso de autenticación y garantiza un acceso seguro a la plataforma.</p>
@@ -184,7 +186,8 @@ window.navigation.addEventListener('navigate', (event) => {
 <p>El portal muestra un contador que indica el tiempo restante para que se lleve a cabo la feria de aplicaciones móviles. Esta cuenta regresiva crea un sentido de anticipación y mantiene a los interesados informados sobre la fecha y hora del evento.</p>
 <h3 id="resultados-y-gráficas-para-el-administrador">Resultados y gráficas para el administrador</h3>
 <p>El administrador del portal tiene acceso a una pantalla exclusiva donde puede visualizar los resultados de las votaciones realizadas por el jurado. Además, se presentan gráficas y estadísticas que ofrecen una representación clara y concisa del desempeño de los proyectos. Esta información es de gran utilidad para el proceso de toma de decisiones y la entrega de premios durante el evento.</p>
-<hr>
+<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var d;{let h={0:t=>t,1:t=>JSON.parse(t,a),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,a)),5:t=>new Set(JSON.parse(t,a)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},a=(t,e)=>{if(t===""||!Array.isArray(e))return e;let[r,n]=e;return r in h?h[r](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(d=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=async()=>{var o;if(!this.hydrator||!this.isConnected)return;let e=(o=this.parentElement)==null?void 0:o.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},c=this.querySelectorAll("template[data-astro-template]");for(let s of c){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("data-astro-template")||"default"]=s.innerHTML,s.remove())}for(let s of r){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("name")||"default"]=s.innerHTML)}let l=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),a):{};await this.hydrator(this)(this.Component,l,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((e,r)=>{r.disconnect(),setTimeout(()=>this.childrenConnectedCallback(),0)}).observe(this,{childList:!0})}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let n=this.getAttribute("renderer-url"),[c,{default:l}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),o=this.getAttribute("component-export")||"default";if(!o.includes("."))this.Component=c[o];else{this.Component=c;for(let s of o.split("."))this.Component=this.Component[s]}return this.hydrator=l,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},d.observedAttributes=["props"],d))}})();</script><astro-island uid="Zd8LlA" prefix="r0" component-url="/_astro/Youtube.4047e8fd.js" component-export="default" renderer-url="/_astro/client.2ce19805.js" props="{&quot;id&quot;:[0,&quot;tcFNE6Mj24U&quot;],&quot;title&quot;:[0,&quot;Play:Youtube&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Youtube&quot;,&quot;value&quot;:true}" await-children=""><link rel="preload" href="https://i.ytimg.com/vi/tcFNE6Mj24U/hqdefault.jpg" as="image"/><article class="yt-lite " data-title="Play:Youtube" style="background-image:url(https://i.ytimg.com/vi/tcFNE6Mj24U/hqdefault.jpg);--aspect-ratio:56.25%"><button type="button" class="lty-playbtn" aria-label="Watch Play:Youtube"></button></article></astro-island>
+<hr/>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
 <p>El desarrollo del portal de la Feria de Aplicaciones Móviles se basó en el uso de las siguientes tecnologías:</p>
 <h3 id="firebase">Firebase</h3>
@@ -194,6 +197,36 @@ window.navigation.addEventListener('navigate', (event) => {
 <h3 id="netlify">Netlify</h3>
 <p>Netlify es una plataforma de alojamiento y despliegue para sitios web y aplicaciones. En este proyecto, Netlify se utiliza para implementar y poner en línea el portal de la feria. La plataforma proporciona una forma sencilla y segura de publicar el proyecto en la web, asegurando su disponibilidad y accesibilidad para los usuarios.</p>
 <p>En conjunto, la combinación de Firebase, NextJS y Netlify permite la creación de un portal de Feria de Aplicaciones Móviles interactivo, funcional y atractivo, que brinda una experiencia satisfactoria tanto a los participantes como al jurado y al administrador del evento.</p>
+										
+											<hr>
+											<h2>Imágenes del Proyecto</h2>
+											<div class="portfolio-container">
+												<div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-1.png">
+															<img src="/images/projects/fec-mobile-apps/fun-1.png" alt="project-image-0">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-2.png">
+															<img src="/images/projects/fec-mobile-apps/fun-2.png" alt="project-image-1">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-3.png">
+															<img src="/images/projects/fec-mobile-apps/fun-3.png" alt="project-image-2">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-4.png">
+															<img src="/images/projects/fec-mobile-apps/fun-4.png" alt="project-image-3">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-5.png">
+															<img src="/images/projects/fec-mobile-apps/fun-5.png" alt="project-image-4">
+														</a>
+													</div><div class="col portfolio-thumbnail">
+														<a class="popup-img" href="/images/projects/fec-mobile-apps/fun-6.png">
+															<img src="/images/projects/fec-mobile-apps/fun-6.png" alt="project-image-5">
+														</a>
+													</div>
+											</div>
 										
 										</div>
 									</div>
@@ -210,21 +243,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>

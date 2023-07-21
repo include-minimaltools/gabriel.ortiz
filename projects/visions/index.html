@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -161,9 +164,8 @@ window.navigation.addEventListener('navigate', (event) => {
 												<li class="date">
 													Fecha:<a href="#">27/2/2022</a>
 												</li>
-												<li class="commont">
-													<i class="ion-ios-heart-outline"></i>
-													<a href="#"> 3 Comments</a>
+												<li class="commont" style="text-transform: lowercase;">
+													<a href="https://github.com/Fosd-Company/AR-Education"><i style="view-transition-name: github-icon-visions" class="mdi mdi-github"></i> github.com/Fosd-Company/AR-Education</a>
 												</li>
 											</ul>
 										</div>
@@ -203,7 +205,8 @@ window.navigation.addEventListener('navigate', (event) => {
 <li><a href="https://github.com/MiguelHG2351">Miguel Hernández Gaitan</a></li>
 <li><a href="https://github.com/darkzense">John Torres</a></li>
 </ul>
-										 
+										
+											<hr>
 											<h2>Imágenes del Proyecto</h2>
 											<div class="portfolio-container">
 												<div class="col portfolio-thumbnail">
@@ -244,21 +247,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>

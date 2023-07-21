@@ -15,7 +15,7 @@
 <title>¿Qué es Turbo C 2.0?</title>
 <meta name="title" content="¿Qué es Turbo C 2.0?">
 <meta name="description" content="Turbo C es uno de los IDE más importantes de la década de los 80', con uno de los lenguajes más populares para programar en ese momento: El Lenguaje C">
-<meta name="keywords" content="Windows Forms">
+<meta name="keywords" content="">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -246,6 +249,7 @@ window.navigation.addEventListener('navigate', (event) => {
 </ul>
 <h2 id="conclusión">Conclusión</h2>
 <p>Turbo C fue un IDE muy importante en su momento, sin embargo no es conveniente seguir desarrollando en él debido a los inconvenientes técnicos que conlleva (además de que la salida laboral es prácticamente inexistente), aunque de forma experimental es muy interesante ver los límites que se pueden realizar en esa tecnología. Puedes utilizar estas limitantes del mismo sistema operativo de MS-DOS para desarrollar tu lógica de programación, aún así siempre recomendaré lenguajes mucho más recientes para aprender a programar. En caso necesites aprender en este lenguaje, te deseo mucha suerte en tu camino, en mi blog existen diversos artículos de proyectos realizados en este lenguaje o librerías de las mismas que te pueden servir para conocer nuevas herramientas o funcionamientos que puedas implementar en tus propias aplicaciones.</p>
+										
 									</div>
 								</div>
 							</div>
@@ -261,21 +265,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>

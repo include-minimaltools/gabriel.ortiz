@@ -123,8 +123,11 @@ window.navigation.addEventListener('navigate', (event) => {
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
           if (toUrl.pathname === "/") {
-            onRoadmap();
-            main();
+            setTimeout(() => {
+              onRoadmap();
+              main();  
+            }, 750);
+            
             $("#main-nav").hide();
           }
         })
@@ -154,7 +157,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-fec-mobileapps">
-      <a href="/projects/fec-mobileapps">Portal Feria Aplicaciones Móviles</a>
+      <a href="/projects/fec-mobileapps"><i style="view-transition-name: github-icon-fec-mobileapps" class="mdi mdi-github"></i> Portal Feria Aplicaciones Móviles</a>
     </h4>
     <p class="separator">
       Portal utilizado para la VI Edición de la Feria de Aplicaciones Móviles de la Universidad Nacional de Ingeniería
@@ -169,7 +172,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-inwent">
-      <a href="/projects/inwent">Inwent System</a>
+      <a href="/projects/inwent"> Inwent System</a>
     </h4>
     <p class="separator">
       El Sistema de Facturación e Inventario es una aplicación desarrollada con tecnologías modernas que permiten una gestión eficiente de las operaciones comerciales y de inventario del negocio
@@ -184,7 +187,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-a-favor">
-      <a href="/projects/a-favor">Haceme un paro</a>
+      <a href="/projects/a-favor"> Haceme un paro</a>
     </h4>
     <p class="separator">
       &#39;Haceme un paro&#39; es una aplicación móvil diseñada para llevar un registro de microprestamos entre amigos. Su objetivo es facilitar el seguimiento de préstamos pequeños realizados entre los usuarios.
@@ -199,7 +202,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-akdmik-lcn">
-      <a href="/projects/akdmik-lcn">Akdmik</a>
+      <a href="/projects/akdmik-lcn"><i style="view-transition-name: github-icon-akdmik-lcn" class="mdi mdi-github"></i> Akdmik</a>
     </h4>
     <p class="separator">
       Akdmik es un sistema web diseñado para el registro de notas del colegio Liceo Cultural Nicaragüense. Ofrece una plataforma completa para administrar y gestionar todas las áreas relacionadas con las calificaciones y el desempeño académico de los estudiantes.
@@ -214,7 +217,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-learn-drive">
-      <a href="/projects/learn-drive">Aplicación Ley 431 de Nicaragua</a>
+      <a href="/projects/learn-drive"> Aplicación Ley 431 de Nicaragua</a>
     </h4>
     <p class="separator">
       La aplicación &#39;Ley 431 de Nicaragua&#39; proporciona un recurso educativo y de estudio para aquellas personas que necesitan tramitar una licencia de conducir en Nicaragua.
@@ -229,7 +232,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-learn-drive-manager">
-      <a href="/projects/learn-drive-manager">Administrador de Ley 431</a>
+      <a href="/projects/learn-drive-manager"><i style="view-transition-name: github-icon-learn-drive-manager" class="mdi mdi-github"></i> Administrador de Ley 431</a>
     </h4>
     <p class="separator">
       La aplicación &#39;Ley 431 de Nicaragua&#39; proporciona un recurso educativo y de estudio para aquellas personas que necesitan tramitar una licencia de conducir en Nicaragua.
@@ -244,7 +247,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-graphics">
-      <a href="/projects/graphics">Game Travel Offline App</a>
+      <a href="/projects/graphics"><i style="view-transition-name: github-icon-graphics" class="mdi mdi-github"></i> Game Travel Offline App</a>
     </h4>
     <p class="separator">
       Game Travel Offline es un proyecto experimental desarrollado para la clase de Programación Gráfica. El juego ofrece una experiencia de juego única utilizando gráficos primitivos dibujados línea por línea.
@@ -259,7 +262,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-visions">
-      <a href="/projects/visions">Visions</a>
+      <a href="/projects/visions"><i style="view-transition-name: github-icon-visions" class="mdi mdi-github"></i> Visions</a>
     </h4>
     <p class="separator">
       Visions es una aplicación desarrollada en Unity que tiene como objetivo dinamizar el estudio convencional al incorporar herramientas interactivas y modelos 3D en el proceso de aprendizaje.
@@ -274,7 +277,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-eva-lightning">
-      <a href="/projects/eva-lightning">EVA Lightning</a>
+      <a href="/projects/eva-lightning"><i style="view-transition-name: github-icon-eva-lightning" class="mdi mdi-github"></i> EVA Lightning</a>
     </h4>
     <p class="separator">
       Eva Lightning es un proyecto de rediseño de la interfaz del Entorno Virtual de Aprendizaje utilizado por la Universidad Nacional de Ingeniería.
@@ -289,7 +292,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-inquiry-log">
-      <a href="/projects/inquiry-log">Inquiry Log</a>
+      <a href="/projects/inquiry-log"><i style="view-transition-name: github-icon-inquiry-log" class="mdi mdi-github"></i> Inquiry Log</a>
     </h4>
     <p class="separator">
       Inquiry Log es un sistema web desarrollado específicamente para los maestros de la Universidad Nacional de Ingeniería.
@@ -304,7 +307,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-aed-hub">
-      <a href="/projects/aed-hub">AED Hub</a>
+      <a href="/projects/aed-hub"><i style="view-transition-name: github-icon-aed-hub" class="mdi mdi-github"></i> AED Hub</a>
     </h4>
     <p class="separator">
       AED Hub es una recopilación completa de todas las actividades relacionadas con algoritmización y estructuras de datos
@@ -319,7 +322,7 @@ window.navigation.addEventListener('navigate', (event) => {
 
   <div class="journal-txt">
     <h4 style="view-transition-name: project-title-turbo-c-studio">
-      <a href="/projects/turbo-c-studio">Turbo C Studio</a>
+      <a href="/projects/turbo-c-studio"> Turbo C Studio</a>
     </h4>
     <p class="separator">
       Herramienta para facilitar la programación en el obsoleto lenguaje de Turbo C en su version 2.0 creada en 1984
@@ -337,21 +340,21 @@ window.navigation.addEventListener('navigate', (event) => {
 	<div class="container">
 		<div class="socials-media text-center">
 			<ul class="list-unstyled">
-				<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-				<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-				<li><a href="#"><i class="ion-social-instagram"></i></a></li>
-				<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-				<li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-				<li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+				<li><a href="https://www.facebook.com/gb.rtz.am"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="https://twitter.com/gbr_aliz"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/gbr.aliz/"><i class="ion-social-instagram"></i></a></li>
 			</ul>
 		</div>
 
 		<p>
-			2023 &copy; Copyrights Minimal Tools
+			Powered by Astro 2023 &copy; Copyrights Minimal Tools
 		</p>
 
 		<div class="credits">
-			Diseñado por <a href="https://github.com/include-minimaltools">Gabriel Ortiz</a>
+			Desarrollado por 
+			<a class="text-secondary" href="https://github.com/include-minimaltools">
+				Gabriel Ortiz
+			</a>
 		</div>
 	</div>
 </footer>
