@@ -133,10 +133,14 @@ window.navigation.addEventListener('navigate', (event) => {
             document.documentElement.scrollTop = 0;
           head[0].innerHTML = headHTML;
           body[0].innerHTML = bodyHTML;
+
+          setTimeout(() => {
+              main();  
+            }, 750);
+
           if (toUrl.pathname === "/") {
             setTimeout(() => {
               onRoadmap();
-              main();  
             }, 750);
             
             $("#main-nav").hide();
