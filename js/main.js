@@ -56,6 +56,23 @@ function main() {
 
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
+
+    if (window.location.pathname !== '/') 
+    {
+      if (scroll > 150) {
+        if (!$("#main-nav-subpage")[0].className) return;
+        
+        $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav-subpage").removeClass("subpage-nav");
+      } else {
+        if ($("#main-nav-subpage")[0].className) return;
+
+        $("#main-nav-subpage").hide();
+        $("#main-nav-subpage").addClass("subpage-nav");
+      }
+      return;
+    }
+
     if (scroll > 200) {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass("subpage-nav");
